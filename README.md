@@ -182,7 +182,7 @@ The project is currently in the documentation and MVP-foundation stage. Feature 
 
 ## Author
 
-Mia Smith-Petross — [miasmith81](https://github.com/miasmith81)
+Mia Smith — [miasmith81](https://github.com/miasmith81)
 
 ## License
 
