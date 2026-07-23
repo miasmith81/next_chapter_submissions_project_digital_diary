@@ -170,7 +170,7 @@ Entries in this admissions prototype are stored in the current browser using `lo
 
 A username and password screen written entirely in client-side JavaScript would not provide real authentication. Secure authentication and per-user backend storage are future production features.
 
-## Project Documentation and AI Collaboration
+## Project Documentation and AI Orchestration 
 
 These records show how the project was planned, developed, questioned, revised, and verified. Together, they give reviewers and future developers a clear view of both the application and the human-AI collaboration behind it.
 
