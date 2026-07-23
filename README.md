@@ -57,6 +57,8 @@ See the detailed [Project Plan](./docs/PROJECT_PLAN.md).
 - Project documentation foundation
 - Admissions interview preparation for Questions 1–6
 - Privacy and browser-storage limitation analysis
+- Gemini placeholder-image prompts, two visual iterations, independent audits, and verified filename correction
+- Live documentation workflow for prompts, decisions, tests, and requirement changes
 
 ### MVP features being built
 
@@ -110,6 +112,10 @@ Claude was used during the original diary project and created a detailed handoff
 
 ChatGPT/Codex serves as the lead planning and implementation collaborator for the admissions rebuild. It has helped compare the original architecture with the submission rubric, organize the project into verifiable phases, rubber-duck interview questions, investigate storage limitations, and create the documentation foundation.
 
+### Gemini — visual asset generation
+
+Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scene sequence and cohesive purple/lavender painterly direction. ChatGPT/Codex independently found that Gemini's second report overstated the technical results: the actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mausi intentionally accepted Gemini's lower-right platform mark as AI-generated-content disclosure. Exact 1024 x 1280 sizing remains pending before repository integration.
+
 I preserve my own voice, challenge recommendations, make the final decisions, and verify important claims before including AI-assisted work in the project.
 
 Additional AI tools will be listed only after they make a real, documented contribution.
@@ -135,14 +141,26 @@ This is a static HTML, CSS, and JavaScript project. It does not require a packag
 
 ```text
 next_chapter_submissions_project_digital_diary/
+├── AGENTS.md                     Standing instructions for project AI agents
 ├── assets/                       Images and other visual assets
 ├── css/                          Application styles
 ├── docs/
 │   ├── AI_USAGE_LOG.md
+│   ├── ASSET_GENERATION_BRIEF.md
+│   ├── DOCUMENTATION_WORKFLOW.md
 │   ├── INTERVIEW_PREP.md
+│   ├── PLACEHOLDER_IMAGE_AUDIT.md
+│   ├── SECOND_COLLECTION_AUDIT.md
 │   ├── PRIVACY_AND_LIMITATIONS.md
 │   ├── PROJECT_PLAN.md
-│   └── PROJECT_REQUIREMENTS_AND_SCOPE.md
+│   ├── PROJECT_REQUIREMENTS_AND_SCOPE.md
+│   ├── evidence/
+│   │   ├── Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf
+│   │   ├── Placeholder_Image_Collection_Audit_Report_Gemini.pdf
+│   │   └── placeholder-image-sha256.txt
+│   └── prompts/
+│       ├── GEMINI_EXACT_SIZE_PROMPT.md
+│       └── GEMINI_SECOND_COLLECTION_PROMPT.md
 ├── js/                           Application JavaScript
 ├── BUILD_LOG.md                  Development decisions and lessons
 ├── index.html                    Application entry page
@@ -171,18 +189,27 @@ Read the complete [Privacy and Limitations](./docs/PRIVACY_AND_LIMITATIONS.md) d
 - [Build Log](./BUILD_LOG.md)
 - [Prompt History](./prompt-history.md)
 - [AI Usage Log](./docs/AI_USAGE_LOG.md)
+- [Asset Generation Brief](./docs/ASSET_GENERATION_BRIEF.md)
+- [Live Documentation Workflow](./docs/DOCUMENTATION_WORKFLOW.md)
 - [Interview Preparation](./docs/INTERVIEW_PREP.md)
+- [First Placeholder Image Audit](./docs/PLACEHOLDER_IMAGE_AUDIT.md)
+- [Second Collection Audit](./docs/SECOND_COLLECTION_AUDIT.md)
+- [Gemini's First Audit Report](./docs/evidence/Placeholder_Image_Collection_Audit_Report_Gemini.pdf)
+- [Gemini's Second Audit Report](./docs/evidence/Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf)
+- [Placeholder Image SHA-256 Manifest](./docs/evidence/placeholder-image-sha256.txt)
+- [Gemini Second-Collection Prompt](./docs/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md)
+- [Gemini Exact-Size Prompt](./docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md)
 - [Privacy and Limitations](./docs/PRIVACY_AND_LIMITATIONS.md)
 - [Project Plan](./docs/PROJECT_PLAN.md)
 - [Project Requirements and Scope](./docs/PROJECT_REQUIREMENTS_AND_SCOPE.md)
 
 ## Development Status
 
-The project is currently in the documentation and MVP-foundation stage. Feature descriptions will be updated as functionality is implemented and verified. Interview answers about bugs, testing, and completed work will be based on real development evidence rather than written in advance.
+The project is currently in the documentation and MVP-foundation stage. The second image collection is visually accepted, sequential filenames have been corrected, and exact 1024 x 1280 sizing remains pending. Feature descriptions and documentation will be updated during development as prompts, decisions, tests, and verified functionality change.
 
 ## Author
 
-Mia Smith — [miasmith81](https://github.com/miasmith81)
+Mia Smith-Petross — [miasmith81](https://github.com/miasmith81)
 
 ## License
 
