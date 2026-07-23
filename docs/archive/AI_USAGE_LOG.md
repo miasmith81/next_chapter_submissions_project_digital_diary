@@ -61,7 +61,7 @@ This log records how AI tools supported the project, what each tool was asked to
 ### ChatGPT/Codex — Exact-size correction prompt
 
 - Purpose: Remove ambiguity from the required image dimensions.
-- Output: A detailed prompt requiring exactly 1024 x 1280 pixels for every image is stored in `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.
+- Output: A detailed prompt requiring exactly 1024 x 1280 pixels for every image is stored in `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.
 - Human decision: Mausi will submit the prompt to Gemini and provide the resulting files for verification.
 
 ### Codex — Documentation reconstruction
@@ -76,7 +76,7 @@ This log records how AI tools supported the project, what each tool was asked to
 - Assigned responsibility: Create a curated document for recurring agent prompts, examples that produced precise execution, and prompts that produced useful partial or unsuccessful results.
 - Why selected: Codex was assigned to preserve repository-level workflows and project-specific prompt lessons beside the chronological prompt record.
 - Model: Not confirmed in the available creation record.
-- Result: Created `docs/AI_AGENT_PROMPT_LIBRARY.md` and organized reusable prompts, project examples, improvements, verification expectations, and reuse guidance.
+- Result: Created `docs/archive/AI_AGENT_PROMPT_LIBRARY.md` and organized reusable prompts, project examples, improvements, verification expectations, and reuse guidance.
 - Human direction: Mausi requested the artifact and selected its three main categories. The library supplements rather than replaces `prompt-history.md`.
 - Verification: The library was reviewed against the existing prompt, audit, privacy, and image-generation records, then linked through the repository instructions and documentation indexes. Its creation and the initial checkpoint were committed as `69c55d2`.
 
@@ -86,10 +86,22 @@ This log records how AI tools supported the project, what each tool was asked to
 - Assigned responsibility: Review the complete current Git change state and synchronize all affected project documentation before any additional application-code changes.
 - Why selected: Codex can inspect the repository, Git state, and living project documents together.
 - Independent verification: The initial `git status --porcelain=v1 --branch`, `git diff`, and `git diff --cached` confirmed that `main` matched `origin/main` at commit `c3cc102` with no changes. Later checks identified the concurrently added prompt library, preserved it, and confirmed that local and remote `main` advanced to commit `69c55d2`.
-- Result: No application code required reconciliation. The prompt library was synchronized across every document affected by its introduction, and the audit itself was added to the chronological records.
+- Result: No application code required reconciliation. The prompt library was synchronized across every document affected by its introduction, the audit was added to the chronological records, and the completed synchronization was committed as `7cf426a`.
 - Human direction: Mausi required the documentation-first checkpoint. No AI recommendation changed product scope or requirements, and Mausi did not accept or reject new generated application content during this audit.
 - Files changed: Documentation only; no HTML, CSS, or JavaScript files were modified.
 - Remaining limitation: The audit confirms repository state at the time it ran; future changes require a new synchronization pass.
+
+### Codex (GPT-5) — Documentation naming and archive reorganization
+
+- Date: July 22, 2026.
+- Mode: Execution Mode.
+- Assigned responsibility: Make the root `README.md` the repository's only file with that name, move the documentation collection under `docs/archive/`, rename both archive indexes, and synchronize all affected references without changing application files.
+- Why selected: Codex can inspect and reorganize repository files, preserve Git history as renames, validate relative links, and audit the final change scope.
+- Human direction: Mausi specified the two index names, required preservation of every document, prohibited application changes, and prohibited committing or pushing.
+- Result: Preserved all 18 documentation files formerly under `docs/`, renamed `docs/README.md` to `docs/archive/ARCHIVE_INDEX.md`, renamed the evidence index to `docs/archive/evidence/EVIDENCE_INDEX.md`, and updated affected instructions, paths, indexes, diagrams, prompts, and logs.
+- Independent verification: Confirmed one repository-wide `README.md`, root README presence, unchanged documentation file count, valid relative Markdown links, an actual-tree-matching structure diagram, no whitespace errors, and a documentation-only Git change set.
+- Files changed: Documentation and documentation paths only; no HTML, CSS, JavaScript, image, or application file was modified.
+- Commit: None; Mausi explicitly prohibited committing and pushing.
 
 ## Human Oversight
 

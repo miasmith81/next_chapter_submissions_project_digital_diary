@@ -39,7 +39,7 @@ The application first proves its value when a user can:
 7. Verify desktop, mobile, keyboard, storage, and accessibility behavior.
 8. Deploy through GitHub Pages and complete the submission audit.
 
-See [Project Plan](./docs/PROJECT_PLAN.md).
+See [Project Plan](./docs/archive/PROJECT_PLAN.md).
 
 ## Completed Foundation
 
@@ -115,30 +115,44 @@ This static project requires no package installation or build command.
 ## Project Structure
 
 ```text
-next_chapter_submission_digital_diary/
+next_chapter_submissions_project_digital_diary/
 ├── AGENTS.md
-├── assets/
-├── css/
-├── docs/
-│   ├── AI_AGENT_PROMPT_LIBRARY.md
-│   ├── AI_USAGE_LOG.md
-│   ├── ASSET_GENERATION_BRIEF.md
-│   ├── DOCUMENTATION_WORKFLOW.md
-│   ├── INTERVIEW_PREP.md
-│   ├── PLACEHOLDER_IMAGE_AUDIT.md
-│   ├── PRIVACY_AND_LIMITATIONS.md
-│   ├── PROJECT_PLAN.md
-│   ├── PROJECT_REQUIREMENTS_AND_SCOPE.md
-│   ├── SECOND_COLLECTION_AUDIT.md
-│   ├── evidence/
-│   └── prompts/
-├── js/
 ├── BUILD_LOG.md
-├── index.html
 ├── LICENSE
-├── prompt-history.md
-└── README.md
+├── README.md
+├── assets␠/
+├── css/
+│   └── style.css
+├── docs/
+│   └── archive/
+│       ├── AI_AGENT_PROMPT_LIBRARY.md
+│       ├── AI_USAGE_LOG.md
+│       ├── ARCHIVE_INDEX.md
+│       ├── ASSET_GENERATION_BRIEF.md
+│       ├── DOCUMENTATION_WORKFLOW.md
+│       ├── INTERVIEW_PREP.md
+│       ├── PLACEHOLDER_IMAGE_AUDIT.md
+│       ├── PRIVACY_AND_LIMITATIONS.md
+│       ├── PROJECT_PLAN.md
+│       ├── PROJECT_REQUIREMENTS_AND_SCOPE.md
+│       ├── SECOND_COLLECTION_AUDIT.md
+│       ├── evidence/
+│       │   ├── EVIDENCE_INDEX.md
+│       │   ├── Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf
+│       │   ├── SECOND_IMAGE_FILENAME_MAP.md
+│       │   ├── placeholder-image-sha256.txt
+│       │   └── source/
+│       │       └── NEXT_CHAPTER_ADMISSIONS_REQUIREMENTS.txt
+│       └── prompts/
+│           ├── GEMINI_EXACT_SIZE_PROMPT.md
+│           └── GEMINI_SECOND_COLLECTION_PROMPT.md
+├── index.html
+├── js/
+│   └── main.js
+└── prompt-history.md
 ```
+
+`assets␠/` uses `␠` to make the existing trailing space in that directory name visible.
 
 ## Storage and Privacy Limitations
 
@@ -157,17 +171,17 @@ A username and password screen written entirely in client-side JavaScript would 
 
 - [Build Log](./BUILD_LOG.md)
 - [Prompt History](./prompt-history.md)
-- [AI Usage Log](./docs/AI_USAGE_LOG.md)
-- [AI Agent Prompt Library](./docs/AI_AGENT_PROMPT_LIBRARY.md)
-- [Asset Generation Brief](./docs/ASSET_GENERATION_BRIEF.md)
-- [Live Documentation Workflow](./docs/DOCUMENTATION_WORKFLOW.md)
-- [Interview Preparation](./docs/INTERVIEW_PREP.md)
-- [First Image Audit](./docs/PLACEHOLDER_IMAGE_AUDIT.md)
-- [Second Image Audit](./docs/SECOND_COLLECTION_AUDIT.md)
-- [Privacy and Limitations](./docs/PRIVACY_AND_LIMITATIONS.md)
-- [Project Plan](./docs/PROJECT_PLAN.md)
-- [Requirements and Scope](./docs/PROJECT_REQUIREMENTS_AND_SCOPE.md)
-- [Documentation Index](./docs/README.md)
+- [AI Usage Log](./docs/archive/AI_USAGE_LOG.md)
+- [AI Agent Prompt Library](./docs/archive/AI_AGENT_PROMPT_LIBRARY.md)
+- [Asset Generation Brief](./docs/archive/ASSET_GENERATION_BRIEF.md)
+- [Live Documentation Workflow](./docs/archive/DOCUMENTATION_WORKFLOW.md)
+- [Interview Preparation](./docs/archive/INTERVIEW_PREP.md)
+- [First Image Audit](./docs/archive/PLACEHOLDER_IMAGE_AUDIT.md)
+- [Second Image Audit](./docs/archive/SECOND_COLLECTION_AUDIT.md)
+- [Privacy and Limitations](./docs/archive/PRIVACY_AND_LIMITATIONS.md)
+- [Project Plan](./docs/archive/PROJECT_PLAN.md)
+- [Requirements and Scope](./docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md)
+- [Archived Documentation Index](./docs/archive/ARCHIVE_INDEX.md)
 
 ## Development Status
 

@@ -75,4 +75,4 @@ Gemini 1.5 Flash returned 12 improved portrait PNG files matching the requested 
 
 Mausi superseded the original no-watermark requirement and accepted the visible platform mark as AI disclosure. Exact sizing is the only unresolved asset requirement.
 
-See `docs/PLACEHOLDER_IMAGE_AUDIT.md`, `docs/SECOND_COLLECTION_AUDIT.md`, and `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.
+See `docs/archive/PLACEHOLDER_IMAGE_AUDIT.md`, `docs/archive/SECOND_COLLECTION_AUDIT.md`, and `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.

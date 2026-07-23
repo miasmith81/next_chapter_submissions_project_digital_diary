@@ -16,7 +16,7 @@ Gemini delivered 12 abstract PNGs and a three-page self-audit. The collection wa
 
 - Twelve original concept-named PNGs were supplied and inspected during the first audit.
 - The original Gemini PDF audit was previously reviewed but was no longer available at its download location during documentation reconstruction, so it is not included in this bundle.
-- `docs/evidence/placeholder-image-sha256.txt`
+- `docs/archive/evidence/placeholder-image-sha256.txt`
 - Approved asset requirements
 
 The audit findings below preserve the completed review. The SHA-256 manifest can identify the original image files if they are restored later.

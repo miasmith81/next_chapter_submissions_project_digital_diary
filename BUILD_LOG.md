@@ -55,7 +55,7 @@ This chronological log records significant project decisions, changes, verificat
 ## 8. AI Agent Prompt Library added — July 22, 2026
 
 - Mausi requested a dedicated document for recurring prompts, prompts that produced precise execution, and examples that did not work as expected.
-- Added `docs/AI_AGENT_PROMPT_LIBRARY.md` as a curated companion to the chronological `prompt-history.md`.
+- Added `docs/archive/AI_AGENT_PROMPT_LIBRARY.md` as a curated companion to the chronological `prompt-history.md`.
 - Organized reusable prompts by agent and purpose, preserved strong and partial project examples, and documented lessons and verification expectations.
 - Connected the library to the repository instructions, documentation workflow, README, documentation index, project plan, AI usage log, and prompt history.
 - No application feature, requirement, privacy boundary, or visual-asset decision changed.
@@ -65,10 +65,21 @@ This chronological log records significant project decisions, changes, verificat
 
 - Mausi required a review of the current Git diff and synchronization of every affected project document before additional application-code changes.
 - Verified that `main` initially tracked `origin/main` at commit `c3cc102` with no staged, unstaged, or untracked changes.
-- A subsequent status check found the concurrently added `docs/AI_AGENT_PROMPT_LIBRARY.md`; preserved it as user-owned work and reviewed it rather than overwriting or removing it. A later check confirmed that it and the initial checkpoint were committed as `69c55d2` and that local and remote `main` had advanced to that commit.
+- A subsequent status check found the concurrently added `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`; preserved it as user-owned work and reviewed it rather than overwriting or removing it. A later check confirmed that it and the initial checkpoint were committed as `69c55d2` and that local and remote `main` had advanced to that commit.
 - Synchronized the repository instructions, documentation workflow, prompt history, AI usage log, build log, README, documentation index, and project plan with the new library.
 - Determined that requirements, privacy boundaries, feature implementation, and asset status did not change, so requirement and asset-audit documents did not require artificial edits.
 - No application code was changed. The next build actions remain pending.
+- The completed documentation synchronization was committed as `7cf426a`.
+
+## 10. Documentation naming and archive reorganization — July 22, 2026
+
+- Mausi required the direct project root `README.md` to be the repository's only file named `README.md`.
+- Inspected a clean repository, later confirmed at `7cf426a`, and found three `README.md` files and 18 files under `docs/` before the change.
+- Moved the complete documentation collection under `docs/archive/` without deleting any document.
+- Renamed `docs/README.md` to `docs/archive/ARCHIVE_INDEX.md` and the archived evidence `README.md` to `docs/archive/evidence/EVIDENCE_INDEX.md`.
+- Updated repository instructions, indexes, Markdown links, repository-relative file references, the root project-structure diagram, prompt history, prompt library, AI usage log, and project plan.
+- Verified that exactly one `README.md` remains, all 18 archived documentation files remain present, relative Markdown links resolve, and the Git change set contains no application files.
+- No commit or push was performed.
 
 ## Next Build Actions
 

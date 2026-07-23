@@ -38,7 +38,7 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 **Reusable prompt:**
 
-> Review the work completed in this task and update every affected project document before declaring the task complete. At minimum, consider `prompt-history.md`, `docs/AI_AGENT_PROMPT_LIBRARY.md`, `docs/AI_USAGE_LOG.md`, `BUILD_LOG.md`, `README.md`, `docs/PROJECT_PLAN.md`, and any relevant requirements, audit, privacy, interview, or evidence file. Record the exact prompt when it is important evidence, the AI agent and model when known, what I accepted or rejected, the files changed, and how the result was verified. Do not create artificial edits in documents that were not affected. Do not include secrets or private diary content.
+> Review the work completed in this task and update every affected project document before declaring the task complete. At minimum, consider `prompt-history.md`, `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`, `docs/archive/AI_USAGE_LOG.md`, `BUILD_LOG.md`, `README.md`, `docs/archive/PROJECT_PLAN.md`, and any relevant requirements, audit, privacy, interview, or evidence file. Record the exact prompt when it is important evidence, the AI agent and model when known, what I accepted or rejected, the files changed, and how the result was verified. Do not create artificial edits in documents that were not affected. Do not include secrets or private diary content.
 
 **Expected result:** Relevant documentation is synchronized with the actual project state.
 
@@ -90,13 +90,27 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 **Expected result:** A clean, explainable milestone ready for Mausi's review.
 
+### 6. Documentation Naming and Archive Integrity
+
+**Best agent:** Codex  
+**Use when:** Documentation folders or indexes need to be renamed or reorganized without losing records  
+**Why Codex:** Codex can compare the Git tree before and after a move, update repository-wide references, and verify relative Markdown links.
+
+**Reusable prompt:**
+
+> Inspect the repository before changing anything. Preserve the root README and every documentation file, reorganize only the requested documentation paths, update all affected links, references, indexes, structure diagrams, instructions, and logs, and do not touch application files. Verify file counts, renamed paths, relative Markdown links, Git scope, and the final structure. Do not commit or push.
+
+**Expected result:** A lossless documentation reorganization with one root `README.md`, dedicated archive indexes, valid links, and a documentation-only Git diff.
+
+**Project example:** Prompt 14 in the root `prompt-history.md` records the exact naming correction request and its verification.
+
 ## Prompts That Produced Precise Execution
 
 ### Exact Gemini Image-Size Correction
 
 **Agent/model:** Gemini Flash; exact interface version should be recorded when submitted  
 **Project stage:** Second image-collection correction  
-**Complete prompt:** `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`
+**Complete prompt:** `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`
 
 **Why it is strong:**
 
@@ -111,7 +125,7 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 ### Second Gemini Collection Brief
 
 **Agent/model:** Gemini 1.5 Flash, as identified in the supplied report  
-**Complete prompt:** `docs/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`
+**Complete prompt:** `docs/archive/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`
 
 **What worked:** It produced a cohesive portrait collection with the requested painterly purple and lavender direction and recognizable themes.
 
@@ -145,7 +159,7 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 **Why it underperformed:** The original request communicated the emotions but did not constrain orientation, exact dimensions, filenames, individual scene assignments, and technical delivery strongly enough.
 
-**Improvement:** The second prompt added an exact 12-image scene list, portrait direction, shared palette and style, content boundaries, separate-file requirements, and sequential names. See `docs/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`.
+**Improvement:** The second prompt added an exact 12-image scene list, portrait direction, shared palette and style, content boundaries, separate-file requirements, and sequential names. See `docs/archive/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`.
 
 **Lesson:** Creative intent and technical acceptance criteria must both be explicit.
 

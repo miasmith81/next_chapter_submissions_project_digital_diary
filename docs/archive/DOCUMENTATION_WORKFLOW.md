@@ -10,6 +10,8 @@ The repository documentation is the durable submission record. Conversation cont
 
 At the beginning of future work, inspect the current repository documentation before relying on remembered details.
 
+The direct project root contains the repository's only `README.md`. Archived documentation uses `docs/archive/ARCHIVE_INDEX.md`, and archived evidence uses `docs/archive/evidence/EVIDENCE_INDEX.md`.
+
 ## Documentation Triggers
 
 Update documentation whenever:
@@ -29,14 +31,14 @@ Update documentation whenever:
 Update every affected document without creating artificial edits in unrelated files.
 
 - `prompt-history.md` - prompts, iterations, response summaries, verification, and decisions
-- `docs/AI_AGENT_PROMPT_LIBRARY.md` - curated reusable prompts, precise examples, partial results, improvements, and lessons
-- `docs/AI_USAGE_LOG.md` - tool, model, assigned task, accepted/rejected output, and human judgment
+- `docs/archive/AI_AGENT_PROMPT_LIBRARY.md` - curated reusable prompts, precise examples, partial results, improvements, and lessons
+- `docs/archive/AI_USAGE_LOG.md` - tool, model, assigned task, accepted/rejected output, and human judgment
 - `BUILD_LOG.md` - chronological work, unexpected results, decisions, lessons, tests, and commits
 - `README.md` - public-facing features, AI contributions, structure, and current status
-- `docs/PROJECT_PLAN.md` - remaining work and phase status
-- `docs/PROJECT_REQUIREMENTS_AND_SCOPE.md` - approved scope and requirement changes
-- `docs/ASSET_GENERATION_BRIEF.md` - asset requirements and approval state
-- `docs/INTERVIEW_PREP.md` - real evidence that strengthens interview answers
+- `docs/archive/PROJECT_PLAN.md` - remaining work and phase status
+- `docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md` - approved scope and requirement changes
+- `docs/archive/ASSET_GENERATION_BRIEF.md` - asset requirements and approval state
+- `docs/archive/INTERVIEW_PREP.md` - real evidence that strengthens interview answers
 - Audit and evidence files - independent findings, reports, manifests, screenshots, and test results
 
 ## Prompt-Capture Standard

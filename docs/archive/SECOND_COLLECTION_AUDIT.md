@@ -17,10 +17,10 @@ Codex created byte-for-byte identical copies named `frame01.png` through `frame1
 ## Evidence
 
 - Twelve supplied second-iteration PNG files
-- `docs/evidence/Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf`
+- `docs/archive/evidence/Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf`
 - Actual metadata inspection
 - Approved asset brief
-- `docs/evidence/SECOND_IMAGE_FILENAME_MAP.md`
+- `docs/archive/evidence/SECOND_IMAGE_FILENAME_MAP.md`
 
 The PDF was inspected as extracted text and rendered pages. No clipping, overlap, broken glyphs, or page-number defects were observed.
 
@@ -66,7 +66,7 @@ The earlier renamed copies were verified byte-for-byte when they were created. T
 
 ## Remaining Action
 
-The only unresolved collection requirement is exact size. Use `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`, then inspect every actual export. Do not mark the assets complete until each file measures exactly 1024 x 1280 or Mausi changes the requirement.
+The only unresolved collection requirement is exact size. Use `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`, then inspect every actual export. Do not mark the assets complete until each file measures exactly 1024 x 1280 or Mausi changes the requirement.
 
 **Repository integration:** Pending final size verification  
 **Related commit:** Add after final integration
