@@ -101,7 +101,7 @@ ChatGPT/Codex is the lead planning, implementation, documentation, and verificat
 
 Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mia accepted Gemini's lower-right mark as AI-generation disclosure. Exact sizing remains pending.
 
-Mia preserves her own voice, challenges recommendations, makes the final decisions, and verifies important claims before including AI-assisted work.
+Mia is the project orchestrator. She assigns responsibilities across ChatGPT, Codex, Gemini, and Claude; transfers relevant context between their separate platforms; challenges recommendations; verifies important claims; and makes the final decisions about what enters the project. The AI tools support the work but do not direct the project or communicate with one another automatically.
 
 ## Running Locally
 

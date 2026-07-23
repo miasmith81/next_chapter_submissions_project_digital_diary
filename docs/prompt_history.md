@@ -13,9 +13,10 @@ The admissions requirements ask for selected prompts that best demonstrate how M
 | Curiosity and questions | Prompts 2, 8, 9, and 15 | Testing assumptions, asking how Codex should work beside the code, and checking the official requirements before redirecting the project |
 | Iteration | Prompts 4, 5, 6, 12, 14, 15, and 17 | Improving image prompts, strengthening documentation, correcting structure, refining the prompt-history strategy, and learning from prompts that did not work |
 | Debugging | Prompts 4 through 6 | Investigating why generated assets missed orientation, naming, and exact-size requirements; application-code debugging will be added from real build work |
-| Verification | Prompts 2, 5, 6, 13, 14, and 15 | Challenging security assumptions, inspecting actual files instead of trusting AI reports, checking Git state, validating links, and comparing the project with the rubric |
-| Follow-up questions | Prompts 6, 8, 9, and 15 | Building on prior answers instead of treating each AI response as final |
-| Unsuccessful prompts and lessons | Prompts 4 through 6 and Prompt 17 | Preserving what did not work, identifying the missing instructions or assumptions, and showing how the next prompt improved |
+| Verification | Prompts 2, 5, 6, 13, 14, 15, and 18 | Challenging security assumptions, inspecting actual files instead of trusting AI reports, checking Git state, validating links, comparing the project with the rubric, and auditing whether approved documentation requirements were actually implemented |
+| Follow-up questions | Prompts 6, 8, 9, 15, and 18 | Building on prior answers, checking the completed documentation, and requiring correction instead of treating each AI response as final |
+| Unsuccessful prompts and lessons | Prompts 4 through 6, 17, and 18 | Preserving what did not work, identifying missing instructions or documentation, rating prompt quality honestly, and showing how the next prompt or update improved |
+| Human judgment and orchestration | Prompts 2, 13, 15, and 18 | Assigning responsibilities across AI tools, challenging recommendations, catching omissions, approving corrections, and retaining final decision authority |
 | Requests to explain code | Pending implementation | These will be recorded when Mia begins building, reviewing, and debugging the HTML, CSS, and JavaScript |
 
 This map will grow from real project work. Categories marked pending are not represented as complete before supporting conversations and code evidence exist.
@@ -293,6 +294,34 @@ This map will grow from real project work. Categories marked pending are not rep
 **Human decision:** Mia wants unsuccessful prompts preserved as learning evidence rather than omitted from the project story.
 
 **Outcome:** Added unsuccessful-prompt evidence to the Part 9 map and expanded the ongoing recording standard so future weak, incomplete, failed, or partially successful prompts include the reason and correction path.
+
+## Prompt 18 — Detect and correct the missing unsuccessful-prompt ratings
+
+**Date and stage:** July 23, 2026 — documentation verification and human-oversight evidence
+
+**AI tool:** ChatGPT/Codex
+
+**Task type:** Independent review, follow-up, correction, and AI orchestration
+
+**Exact verification prompt:**
+
+> Chat remember that I want to show the rating 5/5 of my prompting that we are documentation. So please review that you did show a rating also for prompts that did not give me a good outcome.
+
+**What Mia independently noticed:** The Prompt Library explained why several prompts did not work, but it did not display an explicit numeric rating for those examples. This meant the approved rating framework had been implemented for strong prompts but not consistently applied to unsuccessful prompts.
+
+**AI response and limitation:** Codex reviewed the library and confirmed the omission. It proposed a complete `1/5` through `5/5` scale and explicit ratings for both successful and unsuccessful examples. Codex did not change the documentation until Mia evaluated and approved the correction.
+
+**Exact approval and orchestration prompt:**
+
+> Chat I do approve of the gap update and I would like to make sure we document this conversation and how I saw something that we need to clearly verify showing my independent thinking and how I am not allowing AI to direct and make decisions for me but actually understanding and knowing how to really utilize my AI tools by being the orchestrator and being able to orchestrate multiple AI tools across the platform.
+
+**Human decision and reasoning:** Mia approved the rating correction and required the record to preserve how the correction happened. She did not accept the earlier documentation merely because AI reported it as complete. She reviewed the actual file, identified a missing requirement, asked for verification, considered the proposed ratings, and authorized the final update.
+
+**Multi-tool orchestration evidence:** Mia assigns different responsibilities to ChatGPT, Codex, Gemini, and Claude; carries relevant context between their separate interfaces when needed; evaluates their outputs; and decides what enters the project. The tools are not represented as automatically connected to one another. Mia is the connecting decision-maker and project orchestrator.
+
+**Outcome:** Expanded the rating definitions from `1/5` through `5/5`, clarified that prompt quality and AI outcome quality are different measurements, added explicit ratings to the strong Gemini examples and every unsuccessful example, and strengthened the AI Usage Log and README description of human oversight.
+
+**Verification required:** Confirm that every selected precise-execution and unsuccessful example has an explicit rating, all ratings include a reason, no AI outcome is treated as verified merely because the prompt was highly rated, and all documentation checks continue to pass.
 
 ## Ongoing Recording Standard
 

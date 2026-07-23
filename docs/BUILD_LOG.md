@@ -104,6 +104,18 @@ This chronological log records significant project decisions, changes, verificat
 - Recorded the decision without reproducing excluded name forms in the chronological prompt record.
 - Left the complete documentation update uncommitted for Mia's review.
 
+## 13. Prompt-rating gap detected and corrected — July 23, 2026
+
+- Mia reviewed the completed Prompt Library and noticed that unsuccessful prompts had explanations but no explicit numeric ratings.
+- Codex verified that the omission was real rather than assuring Mia that the earlier update was complete.
+- Mia reviewed and approved the proposed correction before any files were changed.
+- Expanded the internal scale to define `1/5` through `5/5`.
+- Clarified that a rating evaluates prompt quality, while AI-output accuracy remains a separate verification question.
+- Added explicit ratings and reasons to the precise Gemini examples and all examples in the unsuccessful-prompt section.
+- Recorded how Mia caught the gap, challenged the documentation, approved the correction, and orchestrates ChatGPT, Codex, Gemini, and Claude while retaining decision authority.
+- Kept the tools' roles accurate: Mia carries context and decisions across separate platforms; the AI tools are not described as automatically communicating with one another.
+- Left the correction uncommitted for Mia's review.
+
 ## Next Build Actions
 
 1. Review and commit the synchronized Part 9 documentation update.

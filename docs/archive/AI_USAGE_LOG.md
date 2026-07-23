@@ -128,3 +128,15 @@ This log records how AI tools supported the project, what each tool was asked to
 ## Human Oversight
 
 Mia is the project orchestrator and final decision-maker. AI tools may suggest, draft, generate, review, or implement, but Mia determines the project direction, accepts or rejects recommendations, and is responsible for explaining the result. AI-generated claims are independently checked whenever the actual files or code are available.
+
+A concrete example occurred during the prompt-rating audit. AI had added ratings for several strong prompts but omitted numeric ratings from the unsuccessful-prompt section. Mia reviewed the actual library, detected the inconsistency, required verification, evaluated the proposed correction, and approved the update. This demonstrates that AI completion claims remain subject to Mia's review.
+
+Mia's multi-tool orchestration currently works through deliberate assignment and human-controlled context transfer:
+
+- ChatGPT supports planning, requirements interpretation, teaching, and reflective follow-up.
+- Codex inspects and changes the repository, runs checks, and maintains implementation evidence.
+- Gemini produces visual iterations that must be independently inspected.
+- Claude can provide a separate architecture or code-review perspective when an independent review is useful.
+- Mia decides which tool receives each responsibility, transfers the necessary context between separate platforms, compares results, challenges errors, and makes the final project decision.
+
+These tools are not assumed to communicate with one another automatically. Mia is the coordinating layer across them.

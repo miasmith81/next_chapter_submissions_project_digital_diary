@@ -34,7 +34,11 @@ These ratings are a project learning tool, not grades assigned by Next Chapter.
 
 - **5/5:** The prompt clearly defines the goal, context, scope, constraints, expected result, and verification.
 - **4/5:** The prompt is strong and effective but could add one useful constraint, acceptance criterion, organization improvement, or verification step.
-- Prompts below `4/5` may still be preserved when they teach an important lesson about revision, failure, or partial results.
+- **3/5:** The prompt communicates a workable goal but omits multiple details needed for a reliable or complete result.
+- **2/5:** The prompt has an identifiable intention but depends on an incorrect assumption or omits critical requirements.
+- **1/5:** The prompt is too unclear, contradictory, unsafe, or out of scope to produce a dependable result.
+
+The score evaluates the quality of the prompt, not whether the AI obeyed it. A `5/5` prompt can still produce an incorrect output, and a weaker prompt can occasionally produce a useful result. Every output still requires review and verification. Lower-rated prompts are preserved when they demonstrate revision, debugging, verification, or another useful lesson.
 
 ## Recurring Prompts
 
@@ -139,6 +143,7 @@ These ratings are a project learning tool, not grades assigned by Next Chapter.
 **Agent/model:** Gemini Flash; exact interface version should be recorded when submitted  
 **Project stage:** Second image-collection correction  
 **Complete prompt:** `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`
+**Current rating:** 5/5
 
 **Why it is strong:**
 
@@ -154,10 +159,13 @@ These ratings are a project learning tool, not grades assigned by Next Chapter.
 
 **Agent/model:** Gemini 1.5 Flash, as identified in the supplied report  
 **Complete prompt:** `docs/archive/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`
+**Current rating:** 4/5
 
 **What worked:** It produced a cohesive portrait collection with the requested painterly purple and lavender direction and recognizable themes.
 
 **What still required correction:** The downloaded files used generic names and measured 928 x 1152 rather than the reported 1024 x 1280.
+
+**Why the prompt retains a 4/5 rating:** The creative direction and technical target were strong, but the delivery instructions could have separated acceptance criteria, required a file-by-file manifest, and made independent verification a mandatory next step. The poor export does not automatically make the prompt itself poor.
 
 **Lesson:** A detailed creative prompt can improve visual accuracy, but exported-file metadata must still be verified independently.
 
@@ -186,11 +194,14 @@ These ratings are a project learning tool, not grades assigned by Next Chapter.
 ### First Gemini Placeholder-Image Prompt
 
 **Agent:** Gemini; exact model not confirmed  
+**Current rating:** 2/5
 **Expected result:** Twelve project-ready images expressing the approved emotional themes.
 
 **Actual result:** Gemini produced 12 cohesive abstract landscape images, but they did not meet the later portrait 4:5 requirement, requested scenes, sequential naming, or purple-led visual direction.
 
 **Why it underperformed:** The original request communicated the emotions but did not constrain orientation, exact dimensions, filenames, individual scene assignments, and technical delivery strongly enough.
+
+**Why it received 2/5:** The intention was understandable, but too many critical creative and technical requirements were missing for a dependable project-ready result.
 
 **Improvement:** The second prompt added an exact 12-image scene list, portrait direction, shared palette and style, content boundaries, separate-file requirements, and sequential names. See `docs/archive/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`.
 
@@ -199,20 +210,26 @@ These ratings are a project learning tool, not grades assigned by Next Chapter.
 ### Second Gemini Prompt — Partial Technical Miss
 
 **Agent/model:** Gemini 1.5 Flash, as identified in the supplied report  
+**Current rating:** 4/5
 **Expected result:** Correct scenes, cohesive portrait artwork, sequential filenames, and exact 1024 x 1280 exports.
 
 **Actual result:** Visual requirements improved substantially, but the actual files were 928 x 1152 and retained generic Gemini filenames. Gemini's accompanying report incorrectly stated that the dimensions and filenames passed.
 
 **What changed next:** Codex independently inspected the files, defined the `frame01.png` through `frame12.png` mapping, and created a narrowly focused exact-size correction prompt.
 
+**Why it received 4/5 despite the outcome:** The prompt substantially improved the creative result and included important technical targets. The remaining weakness was insufficiently enforceable delivery and verification language. Gemini's failure to follow the prompt and its incorrect self-report are recorded separately from the prompt-quality score.
+
 **Lesson:** Self-reported compliance is not verification. Check the actual files.
 
 ### Client-Side Username and Password Assumption
 
 **Agent:** ChatGPT/Codex  
+**Current rating:** 2/5, based on the recorded initial idea; the complete original wording is not available
 **Initial idea:** Add a username and password screen to make localStorage diary entries secure.
 
 **Why the idea did not work:** A login interface written entirely in browser JavaScript would be cosmetic. JavaScript on the site could still access the stored entries, and there would be no server-side authentication or per-user authorization.
+
+**Why it received 2/5:** The desired privacy outcome was clear, but the idea depended on an incorrect security assumption and did not ask the AI to test the threat model before recommending the interface.
 
 **Improved direction:** Treat localStorage as admissions-prototype persistence, use non-sensitive demonstration content, disclose the limitation clearly, and postpone real authentication until a secure backend exists.
 
