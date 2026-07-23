@@ -16,6 +16,7 @@ Mausi should not need to request documentation updates after every change. Befor
 
 - Capture every material AI prompt, response summary, follow-up, and outcome.
 - Preserve complete prompts in `prompt-history.md` or a linked file under `docs/prompts/`.
+- Update `docs/AI_AGENT_PROMPT_LIBRARY.md` when a prompt establishes a reusable workflow, produces especially precise execution, or provides a useful lesson from a partial or failed result.
 - Record the AI tool, exact model when known, assigned responsibility, and why it was selected.
 - Record what Mausi accepted, rejected, revised, or superseded.
 - Distinguish AI-generated claims from independently verified facts.

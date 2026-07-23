@@ -70,15 +70,25 @@ This log records how AI tools supported the project, what each tool was asked to
 - Result: The root documentation, planning files, interview preparation, AI logs, prompt records, audits, evidence, and prompt templates were reconstructed and packaged together.
 - Limitation: The earlier folder was no longer present, so this is a current reconstruction rather than a claim of byte-for-byte recovery of the missing bundle.
 
+### Codex — AI Agent Prompt Library
+
+- Date: July 22, 2026.
+- Assigned responsibility: Create a curated document for recurring agent prompts, examples that produced precise execution, and prompts that produced useful partial or unsuccessful results.
+- Why selected: Codex was assigned to preserve repository-level workflows and project-specific prompt lessons beside the chronological prompt record.
+- Model: Not confirmed in the available creation record.
+- Result: Created `docs/AI_AGENT_PROMPT_LIBRARY.md` and organized reusable prompts, project examples, improvements, verification expectations, and reuse guidance.
+- Human direction: Mausi requested the artifact and selected its three main categories. The library supplements rather than replaces `prompt-history.md`.
+- Verification: The library was reviewed against the existing prompt, audit, privacy, and image-generation records, then linked through the repository instructions and documentation indexes. Its creation and the initial checkpoint were committed as `69c55d2`.
+
 ### Codex (GPT-5) — Git diff and documentation synchronization audit
 
 - Date: July 22, 2026.
 - Assigned responsibility: Review the complete current Git change state and synchronize all affected project documentation before any additional application-code changes.
 - Why selected: Codex can inspect the repository, Git state, and living project documents together.
-- Independent verification: `git status --porcelain=v1 --branch`, `git diff`, and `git diff --cached` confirmed that `main` matched `origin/main` at commit `c3cc102` with no staged, unstaged, or untracked changes before this audit was documented.
-- Result: No application-code diff or prior documentation diff required reconciliation. The audit itself was recorded in the three applicable chronological records.
+- Independent verification: The initial `git status --porcelain=v1 --branch`, `git diff`, and `git diff --cached` confirmed that `main` matched `origin/main` at commit `c3cc102` with no changes. Later checks identified the concurrently added prompt library, preserved it, and confirmed that local and remote `main` advanced to commit `69c55d2`.
+- Result: No application code required reconciliation. The prompt library was synchronized across every document affected by its introduction, and the audit itself was added to the chronological records.
 - Human direction: Mausi required the documentation-first checkpoint. No AI recommendation changed product scope or requirements, and Mausi did not accept or reject new generated application content during this audit.
-- Files changed: `prompt-history.md`, `docs/AI_USAGE_LOG.md`, and `BUILD_LOG.md` only.
+- Files changed: Documentation only; no HTML, CSS, or JavaScript files were modified.
 - Remaining limitation: The audit confirms repository state at the time it ran; future changes require a new synchronization pass.
 
 ## Human Oversight

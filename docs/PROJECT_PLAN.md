@@ -4,6 +4,7 @@
 
 - Confirm repository, local path, branch, and remote.
 - Add `AGENTS.md` and the complete documentation set.
+- Maintain a curated AI Agent Prompt Library alongside the chronological prompt history.
 - Verify Codex loads the repository instructions.
 - Make the first meaningful documentation commit.
 

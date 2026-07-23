@@ -29,6 +29,7 @@ Update documentation whenever:
 Update every affected document without creating artificial edits in unrelated files.
 
 - `prompt-history.md` - prompts, iterations, response summaries, verification, and decisions
+- `docs/AI_AGENT_PROMPT_LIBRARY.md` - curated reusable prompts, precise examples, partial results, improvements, and lessons
 - `docs/AI_USAGE_LOG.md` - tool, model, assigned task, accepted/rejected output, and human judgment
 - `BUILD_LOG.md` - chronological work, unexpected results, decisions, lessons, tests, and commits
 - `README.md` - public-facing features, AI contributions, structure, and current status

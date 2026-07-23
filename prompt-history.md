@@ -102,7 +102,29 @@ This document captures the material human-AI interactions that shaped the projec
 
 **Outcome:** Supplied the complete target repository tree and clarified that the contents of `next_chapter_documentation` should be copied into the existing repository root, not kept as an extra nested folder. Existing `assets`, `css`, `js`, `index.html`, and `LICENSE` files should remain in place.
 
-## Prompt 12 — Audit the current Git diff and synchronize documentation
+## Prompt 12 — Create a curated AI Agent Prompt Library
+
+**Date and stage:** July 22, 2026 — documentation-system improvement
+
+**AI tool and model:** Codex; exact model not confirmed in the available record
+
+**Exact user prompt:**
+
+> Chat I want this prompt to Codex to be stored in an AI Agents prompt doc. I want to create a AI Agent doc that records recurring prompts, prompts that gave me precise execution, and maybe show a few prompts that did not work as well as I was expecting
+
+**Purpose:** Create a reusable prompt library that complements the chronological history by organizing recurring prompts, precise-execution examples, and instructive partial or unsuccessful results.
+
+**Response summary and outcome:** Created `docs/AI_AGENT_PROMPT_LIBRARY.md` with a recording standard, recurring agent prompts, strong project examples, weaker or partial examples, lessons, and reuse guidance. The library was then connected to the repository instructions, documentation workflow, README, documentation index, plan, AI usage log, and build log.
+
+**Human decision:** Mausi requested this new documentation artifact and defined the categories it must preserve. No application requirement or visual decision changed.
+
+**Verification:** Reviewed the library against the chronological prompt record and independently checked that every repository document claiming or governing the new library links to it consistently.
+
+**Files affected:** `docs/AI_AGENT_PROMPT_LIBRARY.md`, `AGENTS.md`, `docs/DOCUMENTATION_WORKFLOW.md`, `README.md`, `docs/README.md`, `docs/PROJECT_PLAN.md`, `prompt-history.md`, `docs/AI_USAGE_LOG.md`, and `BUILD_LOG.md`.
+
+**Related commit:** `69c55d2` (library creation and initial documentation checkpoint).
+
+## Prompt 13 — Audit the current Git diff and synchronize documentation
 
 **Date and stage:** July 22, 2026 — repository and documentation foundation
 
@@ -116,13 +138,13 @@ This document captures the material human-AI interactions that shaped the projec
 
 **Purpose:** Confirm the repository's current change state and ensure every document affected by that state is synchronized before application-code work resumes.
 
-**Response summary:** Codex inspected the branch, staged changes, unstaged changes, untracked files, recent Git history, and the required living documentation. The repository was clean on `main`, tracking `origin/main`, at commit `c3cc102`; no application-code or pre-existing documentation diff existed to reconcile.
+**Response summary:** Codex inspected the branch, staged changes, unstaged changes, untracked files, recent Git history, and the required living documentation. The repository was initially clean on `main`, tracking `origin/main`, at commit `c3cc102`. During the audit, the new untracked `docs/AI_AGENT_PROMPT_LIBRARY.md` appeared as a concurrent change and was committed with the initial checkpoint as `69c55d2`. Codex preserved it, reviewed its claims, and synchronized every document affected by its introduction.
 
 **Human decision:** Mausi required documentation synchronization to happen before any additional code changes. No new product, design, privacy, asset, or scope decision was introduced.
 
-**Verification and outcome:** `git status --porcelain=v1 --branch`, `git diff`, and `git diff --cached` showed no pre-existing changes. This audit was recorded in the prompt history, AI usage log, and build log. No application code was changed. README, project plan, requirements, and asset audits were reviewed but did not require edits because their statuses did not change.
+**Verification and outcome:** Initial `git status --porcelain=v1 --branch`, `git diff`, and `git diff --cached` showed no pre-existing changes. Later checks identified the concurrent prompt-library addition and confirmed that local and remote `main` advanced to `69c55d2`. The final documentation diff was checked for whitespace errors and scope. No application code was changed. Requirements and asset audits were reviewed but did not require edits because their statuses did not change.
 
-**Files affected:** `prompt-history.md`, `docs/AI_USAGE_LOG.md`, and `BUILD_LOG.md`.
+**Files affected:** `docs/AI_AGENT_PROMPT_LIBRARY.md`, `AGENTS.md`, `docs/DOCUMENTATION_WORKFLOW.md`, `README.md`, `docs/README.md`, `docs/PROJECT_PLAN.md`, `prompt-history.md`, `docs/AI_USAGE_LOG.md`, and `BUILD_LOG.md`.
 
 **Related commit:** Pending.
 

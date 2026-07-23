@@ -16,6 +16,7 @@ This folder is the working record for the Next Chapter Admissions Project. Start
 
 ## AI Use and Documentation Practice
 
+- `AI_AGENT_PROMPT_LIBRARY.md` — curated recurring prompts, precise-execution examples, partial results, improvements, and reuse guidance
 - `AI_USAGE_LOG.md` — each agent's role, model strategy, outputs, verification, and human oversight
 - `DOCUMENTATION_WORKFLOW.md` — standing rule for keeping records synchronized with the build
 - Root `AGENTS.md` — repository instructions that tell Codex to apply the workflow

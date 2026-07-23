@@ -47,6 +47,7 @@ See [Project Plan](./docs/PROJECT_PLAN.md).
 - Requirements and scope review
 - Static-site architecture decision
 - Documentation foundation and standing `AGENTS.md` workflow
+- Curated AI Agent Prompt Library for reusable, precise, and instructive prompts
 - Interview preparation for Questions 1-6
 - Privacy and browser-storage limitation analysis
 - Gemini image prompts and two visual iterations
@@ -119,6 +120,7 @@ next_chapter_submission_digital_diary/
 ├── assets/
 ├── css/
 ├── docs/
+│   ├── AI_AGENT_PROMPT_LIBRARY.md
 │   ├── AI_USAGE_LOG.md
 │   ├── ASSET_GENERATION_BRIEF.md
 │   ├── DOCUMENTATION_WORKFLOW.md
@@ -156,6 +158,7 @@ A username and password screen written entirely in client-side JavaScript would 
 - [Build Log](./BUILD_LOG.md)
 - [Prompt History](./prompt-history.md)
 - [AI Usage Log](./docs/AI_USAGE_LOG.md)
+- [AI Agent Prompt Library](./docs/AI_AGENT_PROMPT_LIBRARY.md)
 - [Asset Generation Brief](./docs/ASSET_GENERATION_BRIEF.md)
 - [Live Documentation Workflow](./docs/DOCUMENTATION_WORKFLOW.md)
 - [Interview Preparation](./docs/INTERVIEW_PREP.md)
