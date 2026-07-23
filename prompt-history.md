@@ -1,322 +1,117 @@
 # Prompt History
 
-## Project
+This document captures the material human-AI interactions that shaped the project. It records the purpose, important wording, outcome, human decision, and related evidence. It is a curated admissions record, not a claim that every conversational filler message is reproduced verbatim.
 
-**Next Chapter Submissions Project — A Digital Diary**
+## Prompt 1 — Review requirements and reconsider the original architecture
 
-## Purpose
+**Purpose:** Review the Next Chapter admissions requirements, Mausi's written responses, and the original diary handoff; identify a compliant direction while preserving the strongest parts of the original idea.
 
-This file highlights the prompts that best demonstrate how I plan, question, iterate, debug, and verify work with AI. It is a curated project record, not an unfiltered transcript.
+**Important instructions:** Keep the personal digital-diary concept, remove Mausi's personal entries, let each user personalize the diary, preserve the style and color palette, retain appropriate animation ideas, and document the full process and AI-agent choices.
 
-Sensitive personal information, credentials, private diary entries, and authentication codes must never be included.
+**Outcome:** The project direction changed from React, Express, and Neon to a static HTML, CSS, and JavaScript prototype suitable for GitHub Pages. The core diary idea and selected design concepts were retained.
 
----
+**Human decision:** Mausi accepted the reset because it aligned the build with the submission requirements.
 
-## Prompt 1 — Requirements and architecture review
+## Prompt 2 — Test the localStorage security assumption
 
-**Stage:** Planning  
-**AI tool:** ChatGPT/Codex  
-**Model:** Record the exact model shown in the product interface  
-**Mode:** Teaching Mode
+**Purpose:** Determine whether a username and password created entirely in the static application would secure diary entries stored in localStorage.
 
-### Prompt
+**Outcome:** ChatGPT/Codex explained that JavaScript running on the site can read localStorage and that a client-only login screen does not create production-grade protection. localStorage can support admissions-prototype functionality, but the limitation must be disclosed.
 
-Review the Next Chapter admissions requirements and my original digital diary handoff. Help me determine what can be preserved, what conflicts with the rubric, how I should document the build and prompt history, and which AI tools should be assigned to each type of task. Do not generate code yet.
+**Human decision:** Mausi agreed to describe the project as a functional prototype rather than a secure mental-health platform.
 
-### Why this was a strong prompt
+## Prompt 3 — Rubber-duck interview answers
 
-- Supplied both the requirements and the previous-project context.
-- Defined the desired outcome.
-- Established a no-code boundary.
-- Asked for architecture, documentation, and AI-tool decisions rather than code generation alone.
+**Purpose:** Help Mausi explain the intended user, problem, value, diary format, minimum viable functionality, build order, and responsible AI use in clear professional language.
 
-### Result and decision
+**Process:** Mausi answered first in her own words. ChatGPT suggested refinements. Mausi selected the final wording and meaning.
 
-The review identified a conflict between the original React/Express/Neon architecture and the static GitHub Pages requirement. I decided to rebuild the admissions version as a static functional prototype while preserving the diary design and animation.
+**Outcome:** The refined current answers are stored in `docs/INTERVIEW_PREP.md`. Questions that require actual build experience remain open until implementation evidence exists.
 
-### Verification
+## Prompt 4 — Generate the first 12 placeholder images
 
-I compared the recommendation against the actual submission checklist and deployment requirement.
+**Purpose:** Ask Gemini to create 12 placeholder images expressing serenity, peace, love, compassion, and understanding for the diary's visual experience.
 
----
+**Outcome:** Gemini produced a cohesive abstract landscape collection. Independent review found that it did not satisfy the later portrait 4:5 specification.
 
-## Prompt 2 — Challenge the storage recommendation
+**Related evidence:** `docs/PLACEHOLDER_IMAGE_AUDIT.md` and, when available, `docs/evidence/Placeholder_Image_Collection_Audit_Report_Gemini.pdf`.
 
-**Stage:** Security and scope decision  
-**AI tool:** ChatGPT/Codex  
-**Mode:** Teaching Mode
+## Prompt 5 — Regenerate the image collection with clearer requirements
 
-### Prompt
+**Purpose:** Give Gemini Flash a more detailed, direct brief for 12 cohesive portrait diary images.
 
-If I use `localStorage` instead of a cloud database, can I create a username and password model that is enough to keep each user's saved mental-health diary data secure?
+**Exact prompt:** Preserved in `docs/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`.
 
-### Why this was an important follow-up
+**Outcome:** Gemini created a much stronger portrait collection, but the downloaded filenames were generic and the files were 928 x 1152 instead of an exact 4:5 size.
 
-The prompt did not automatically accept the first architecture recommendation. It questioned a security assumption before implementation.
+**Related evidence:** `docs/SECOND_COLLECTION_AUDIT.md` and `docs/evidence/Image_Collection_Verification_Report_Gemini_Second_Iteration.pdf`.
 
-### Result and decision
+## Prompt 6 — Require exact image dimensions
 
-I learned that a JavaScript-only login screen would not provide real authentication because JavaScript on the same website can access the browser storage. I decided not to build cosmetic security or claim that the prototype is production-secure.
+**Purpose:** Remove all ambiguity about the technical size requirement after the second collection missed exact 4:5 dimensions.
 
-### Verification
+**Exact prompt:** Preserved in `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.
 
-The answer was checked against authoritative browser-storage security guidance.
+**Required result:** Exactly 12 PNG files, each exactly 1024 pixels wide by 1280 pixels high. No alternate dimensions, near matches, padding, borders, collages, or contact sheets.
 
----
+**Status:** Awaiting regenerated files and independent verification.
 
-## Prompt 3 — Interview rubber-ducking
+## Prompt 7 — Establish live documentation as a standing rule
 
-**Stage:** Interview preparation  
-**AI tool:** ChatGPT/Codex  
-**Mode:** Teaching Mode
+**Exact user prompt:**
 
-### Prompt
+> Chat every new prompt and update that we do must be captured and all applied docs be updated with every new change and update that I need you to make sure you are doing as we keep building. Question Chat am I going to have to prompt you to update all docs as we keep working or will you put in your memory while working on this project update all docs as new changes happen in live time?
 
-Rubber-duck the possible admissions interview questions with me one question at a time. Help me separate the problem, value, and solution, preserve my voice, identify anything missing, and wait for me to explain each idea in my own words before refining the answer.
+**Outcome:** Live documentation became a standing project workflow. Relevant records must be updated during each material change rather than reconstructed only at the end.
 
-### Why this was a strong prompt
+**Implementation:** `AGENTS.md` and `docs/DOCUMENTATION_WORKFLOW.md` encode the repository-level instruction.
 
-- Defined a step-by-step learning process.
-- Protected my ownership of the answers.
-- Asked AI to identify gaps rather than replace my thinking.
-- Produced explanations I can genuinely defend in an interview.
+## Prompt 8 — Connect Codex directly to the repository workflow
 
-### Result
+**Exact user prompt:**
 
-Questions about the problem, user value, solution choice, build order, AI collaboration, and challenging an AI recommendation were developed and refined. Bug and verification answers were intentionally postponed until evidence exists from the build.
+> Chat how do we get Codex the ability to update all my docs workflow working with me directly alongside my code?
 
----
+**Outcome:** The recommended workflow is to open the actual repository as the Codex workspace and keep the documentation files inside that repository. Codex can then inspect code, implement approved work, verify it, and update the related documentation in the same task.
 
-## Prompt 4 — Generate 12 diary placeholder images
+## Prompt 9 — Decide whether Codex needs `prompt-history.md`
 
-**Stage:** Visual asset planning  
-**AI tool:** Gemini  
-**Model:** Not identified in the supplied report; record the exact model displayed in Gemini  
-**Mode:** Image generation  
-**Status:** First iteration returned and independently audited; revision required
+**Exact user prompt:**
 
-### Goal
+> chat do I need to give this prompt-history.md to codex
 
-Generate a cohesive collection of 12 non-personal images for the diary's automatic placeholder rotation.
+**Outcome:** Yes. `prompt-history.md` should be placed in the repository root. Codex does not need a separate upload when it is already working in that repository because it can read and update the file directly.
 
-### Complete prompt
+## Prompt 10 — Restore the complete documentation folder
 
-Create a cohesive collection of 12 separate portrait-oriented digital illustrations for a responsive mental-health journaling prototype called “A Digital Diary.” The images should communicate serenity, peace, love, compassion, understanding, hope, emotional warmth, reflection, healing, connection, and gentle resilience.
+**Exact user prompt:**
 
-Use one consistent soft painterly illustration style across the entire collection. Use a harmonious palette built around deep purple, lavender, soft blue, lilac, white, and subtle warm-gold highlights. The mood should feel calm, supportive, inclusive, mature, and emotionally safe—not childish, clinical, gloomy, or overly dramatic.
+> chat please give me all the docs and make sure you are give me the most up to date because for some reason i no longer have a docs folder with all the docs
 
-Create 12 individual images, not a collage, contact sheet, grid, or single combined image. Each image must use a portrait 4:5 composition suitable for cropping inside a CSS-created polaroid frame. Generate full-bleed artwork without a border or built-in frame.
+**Outcome:** Reconstructed the latest complete project documentation bundle, added the available source evidence, packaged it as a new ZIP, and performed an archive integrity test.
 
-Use these 12 visual themes:
+**Recovery note:** The earlier generated folder was no longer present. This bundle is a current reconstruction from the latest project record and available source files; it is not represented as a byte-for-byte recovery of the missing folder.
 
-1. Serenity — a still lake at dawn with soft mist and gentle reflections.
-2. Peace — a quiet forest path with filtered lavender-blue light.
-3. Love — two abstract ribbons of light forming a subtle heart shape.
-4. Compassion — gentle hands carefully holding a small warm light, with no identifiable person.
-5. Understanding — a softly illuminated bridge connecting two peaceful shores.
-6. Calm — moonlight resting across slow ocean waves.
-7. Reflection — a lotus and expanding ripples on clear water.
-8. Safety — a strong tree creating a protective canopy over a quiet resting place.
-9. Hope — birds moving toward light through an open purple-blue sky.
-10. Comfort — a warm cup beside a softly lit window with a folded blanket and no readable text.
-11. Healing — warm light breaking gently through layered clouds after rain.
-12. Connection — a circle of varied wildflowers growing together in harmony.
+## Prompt 11 — Confirm the complete VSCode file structure
 
-Do not include readable text, letters, numbers, signatures, logos, watermarks, UI elements, medical symbols, medication, diagnoses, crisis scenes, violence, identifiable faces, personal photographs, or copyrighted characters. Avoid stereotypes about mental health. Keep human representation symbolic and non-identifying.
+**Exact user prompt:**
 
-Return or export the images as 12 separate high-quality PNG files. Use the filenames `frame01.png` through `frame12.png` in the same order as the themes above. Keep the dimensions and visual treatment consistent across the collection.
+> Chat can you please show me the whole file structure and what it should look like in my VSCode before I update the files
 
-### Why this is a strong prompt
+**Purpose:** Give Mausi a safe visual reference showing where every restored root document, `docs` subfolder, evidence file, prompt file, code folder, and asset folder belongs before she replaces or adds files in VSCode.
 
-- Defines the purpose and emotional goals.
-- Connects the assets to the established project palette.
-- Specifies separate files, orientation, cropping behavior, and filenames.
-- Gives each image a distinct theme while preserving one visual system.
-- Prevents text, personal content, built-in borders, and inappropriate mental-health imagery.
-- Establishes objective review criteria before the images enter the repository.
+**Outcome:** Supplied the complete target repository tree and clarified that the contents of `next_chapter_documentation` should be copied into the existing repository root, not kept as an extra nested folder. Existing `assets`, `css`, `js`, `index.html`, and `LICENSE` files should remain in place.
 
-### Result and decision
+## Ongoing Recording Standard
 
-Gemini returned 12 separate abstract PNG files and a three-page self-audit report. The collection has a cohesive soft-focus style and avoids faces, personal information, medical claims, and crisis imagery. It does not meet the full approved brief: every image is 1376 x 768 landscape instead of portrait 4:5, the filenames do not use the required sequence, the requested scene list was replaced, purple/lavender is not the primary palette, and every image contains a repeated lower-right four-point mark.
+For every material interaction, add:
 
-ChatGPT/Codex recommends revision before integration. Mausi's final approval decision is pending, so none of the images have been added to the repository.
+1. Sequential prompt number and descriptive title.
+2. Date and AI tool/model when confirmed.
+3. User purpose and exact prompt when it is important evidence.
+4. AI output summary, including mistakes or limitations.
+5. Mausi's decision and reasoning.
+6. Files changed and verification performed.
+7. Open questions or next action.
 
-### Verification
-
-ChatGPT/Codex independently verified the count, distinct hashes, PNG format, dimensions, orientation, filenames, file sizes, visual consistency, and visible prohibited-content requirements. It also rendered and inspected all three pages of Gemini's report. Testing inside the application's CSS polaroid frame remains pending because the component has not been built and the first collection uses the wrong orientation.
-
-### Files affected
-
-Planned location: `assets/frames/frame01.png` through `assets/frames/frame12.png`.
-
-### Related commit
-
-Add after the approved images are committed.
-
----
-
-## Prompt 5 - Correct the first Gemini image collection
-
-**Stage:** Visual asset revision  
-**AI tool:** Gemini  
-**Model:** Gemini 1.5 Flash, as identified in Gemini's supplied report  
-**Mode:** Image generation  
-**Status:** Submitted; second collection returned and independently audited
-
-### Goal
-
-Preserve the strongest visual qualities of the first output while correcting the requirements that failed independent verification.
-
-### Complete prompt
-
-The complete submitted prompt is preserved in `docs/prompts/GEMINI_SECOND_COLLECTION_PROMPT.md`. It specified the project purpose, exact 12-scene sequence, purple/lavender painterly design system, separate PNG output, 4:5 portrait orientation, 1024 x 1280 target dimensions, sequential filenames, prohibited content, and a per-file verification table.
-
-### Why this follow-up is stronger
-
-- Identifies the exact failures instead of asking generally for improvement.
-- Preserves the cohesive qualities that worked.
-- Restates orientation, filename, palette, scene, and prohibited-mark requirements.
-- Requires per-file evidence before Gemini claims completion.
-- Leaves final acceptance with Mausi after independent review.
-
-### Result and decision
-
-Gemini returned 12 improved portrait illustrations and a four-page report identifying the model as Gemini 1.5 Flash. The visuals matched the requested scene sequence and design direction. Independent file inspection found that every image measured 928 x 1152 and used a Gemini-generated filename, even though the report claimed 1024 x 1280 and `frame01.png` through `frame12.png`.
-
-Codex created sequentially named, byte-for-byte identical copies. Mausi accepted the lower-right Gemini platform watermark as intentional AI disclosure, superseding the earlier no-watermark requirement. Exact sizing remains pending.
-
-### Files affected
-
-Renamed copies were prepared in a separate downloadable `assets/frames/` folder. No images have been copied into the project repository yet.
-
-### How I will verify the result
-
-ChatGPT/Codex rendered all four report pages, inspected actual PNG metadata, reviewed visual concepts and prohibited content, verified the renamed copies byte-for-byte, and tested the ZIP archive. See `docs/SECOND_COLLECTION_AUDIT.md`.
-
----
-
-## Prompt 6 - Correct the exact dimensions of all 12 images
-
-**Stage:** Visual asset correction  
-**AI tool:** Gemini  
-**Intended model:** Gemini 1.5 Flash  
-**Mode:** Image editing and verification  
-**Status:** Prepared; result pending
-
-### Goal
-
-Correct only the technical dimensions while preserving the accepted artwork and visible AI watermark.
-
-### Complete prompt
-
-The complete prompt is preserved in `docs/prompts/GEMINI_EXACT_SIZE_PROMPT.md`. It instructs Gemini to extend each 928 x 1152 canvas to 928 x 1160 by naturally adding four pixels at the top and bottom, then resize to exactly 1024 x 1280. It prohibits regeneration, redesign, meaningful cropping, distortion, removal of the accepted watermark, format changes, or unsupported success claims.
-
-### Why this prompt is strong
-
-- Focuses on one remaining problem instead of regenerating approved artwork.
-- States the exact width, height, orientation, ratio, and PNG format repeatedly.
-- Provides a mathematically exact canvas-correction method.
-- Preserves the original composition and accepted AI disclosure mark.
-- Requires verification from actual exported-file properties.
-- Requires Gemini to report a limitation honestly if its platform cannot export the requested dimensions.
-
-### Result and decision
-
-Pending submission and independent inspection of the returned files.
-
-### Files affected
-
-No repository files yet. Final candidates will be `assets/frames/frame01.png` through `assets/frames/frame12.png` only after exact metadata verification.
-
-### How I will verify the result
-
-Inspect all 12 actual PNG files and require exactly 1024 pixels wide by 1280 pixels high before marking the asset collection complete.
-
----
-
-## Prompt 7 - Establish live project documentation
-
-**Date:** July 22, 2026  
-**Development stage:** Project-process definition  
-**AI tool:** ChatGPT/Codex  
-**Mode:** Execution  
-**Status:** Implemented in the documentation bundle
-
-### Complete prompt
-
-Chat every new prompt and update that we do must be captured and all applied docs be updated with every new change and update that I need you to make sure you are doing as we keep building. Question Chat am I going to have to prompt you to update all docs as we keep working or will you put in your memory while working on this project update all docs as new changes happen in live time?
-
-### Result and decision
-
-Mausi will not need to request documentation updates after every material change. ChatGPT/Codex added a project-level `AGENTS.md` and `docs/DOCUMENTATION_WORKFLOW.md` so the rule travels with the repository and is more reliable than conversational memory alone.
-
-Every relevant document will be updated as prompts, decisions, requirements, tests, AI outputs, bugs, commits, and deployment status change. Unrelated documents will not be edited artificially.
-
-### Files affected
-
-- `AGENTS.md`
-- `docs/DOCUMENTATION_WORKFLOW.md`
-- All documentation affected by the second Gemini image iteration
-
-### How I verified the result
-
-Reviewed the documentation set for current asset status, preserved the new prompts and evidence, and rebuilt the downloadable documentation bundle.
-
----
-
-## Prompt 8 - Connect Codex directly to the VSCode repository workflow
-
-**Date:** July 22, 2026  
-**Development stage:** Local development setup  
-**AI tool:** ChatGPT/Codex  
-**Mode:** Teaching and setup guidance  
-**Status:** Instructions prepared; repository connection pending
-
-### Complete prompt
-
-Chat how do we get Codex the ability to update all my docs workflow working with me directly alongside my code?
-
-### Result and decision
-
-The recommended setup is to open the actual Git repository as the VSCode workspace, use the Codex IDE extension from that workspace, place the project `AGENTS.md` at the repository root, and keep the documentation files in the same repository. Codex can then edit code and affected documentation during the same active task.
-
-The setup must be verified before implementation by asking Codex to report the repository root and summarize the active `AGENTS.md` instructions without changing files. Codex does not silently monitor unrelated manual edits in the background; after Mausi edits files manually, she can ask Codex to review the current diff and synchronize affected documentation.
-
-### Verification source
-
-Checked the current official OpenAI Codex IDE-extension and `AGENTS.md` documentation. The IDE extension uses open editor context and supports reviewing edits in place. Codex discovers project instructions from the Git root down to the active working directory.
-
-### Remaining action
-
-Open `next_chapter_submission_digital_diary` as the VSCode workspace, copy the documentation bundle into that repository, confirm `AGENTS.md` is at the root, start a fresh Codex IDE chat, and run the read-only verification prompt.
-
----
-
-## Prompt-entry template
-
-**Prompt number and title:**  
-**Date:**  
-**Development stage:**  
-**AI tool:**  
-**Model:**  
-**Mode:** Teaching or Execution  
-
-### Goal
-
-### Complete prompt
-
-### Why I wrote the prompt this way
-
-### AI response summary
-
-### Follow-up prompt
-
-### What I accepted
-
-### What I changed or rejected
-
-### Files affected
-
-### How I verified the result
-
-### Related commit
+Sensitive diary content, passwords, secrets, access tokens, and unrelated personal information must never be copied into this record.

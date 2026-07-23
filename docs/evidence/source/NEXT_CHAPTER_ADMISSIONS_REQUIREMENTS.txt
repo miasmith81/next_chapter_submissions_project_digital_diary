@@ -1,0 +1,139 @@
+Next Chapter Admissions Project Requirements
+
+Part 1 - Mission Brief: Dealing with your own personal mental health and how to express it in a healthy therapeutic way freely without any judgment. This gives anyone struggling with mental health issues a safe place to write down what they are or have been struggling with inside. This is also a way they can write down what is currently crippling them so that they don’t have to remember and not address at their next therapy session.
+
+Part 2 - Define the Value & Part 3 - Plan Your Project: 
+Creating a digital personal diary to follow your mental health emotional journey at anytime anywhere
+Problem: Anyone struggling with mental health
+Value: Writing down your mental health struggles in a therapeutic way to then share with your therapist. People struggling with a mental health crisis sometimes don’t remember what triggered them so if they had a digital diary that they could access at anytime anywhere they could write down how they are feeling in that current moment. They could then share this diary entry with their therapist to help them maybe see what the trigger was or what triggered them to work through and process to help the individual heal. 
+Smallest Demonstration of Value (What is the smallest version of your application that proves your  idea works?): The ability to access anytime anywhere.
+Required Features (What features are necessary to deliver that value?): Can be viewed on mobile phone and desktop. 
+Why I believe my digital diary will help others who are also struggling with their own mental health issues: I am hoping that a digital diary will give others a chance to express their struggles at anytime anywhere. They could then take their diary entries and share them with a therapist. I am hoping that this empowers individuals and really helps them heal and feel heard. 
+
+Part 4 - Build Your Application - AI Tools: Claude, ChatGPT, GitHub Copilot, Gemini and Perplexity 
+
+Part 5 - Project Requirements: 
+Your submission should include:
+- A working web application
+- HTML
+- CSS
+- JavaScript
+
+Part 6 - GitHub Repository: Create  a public GitHub repository	for your project.
+Your repository should include:
+- Source code
+- README
+- Prompt history 
+- Commit history
+***Commit Frequently***
+A meaningful commit history helps reviewers understand how your project evolved. 
+
+Part 7 - Deploy Your Project with GitHub Page:
+Your project should be viewable through a live GitHub Pages link. 
+
+This allows reviewers to open and test your application without downloading your code.
+
+GitHub Pages works well for simple HTML, CSS, and JavaScript projects. GitHub’s documentation says Pages can publish from a repository branch and source folder, such as the root folder / or /docs.
+Requirements
+Your deployed project should include:
+* A working GitHub Pages link
+* An index.html file
+* CSS and JavaScript files correctly connected
+* No private or sensitive information
+Basic Deployment Steps
+1. Push your finished project to GitHub.
+2. Make sure your main HTML file is named:
+index.html
+1. Open your repository on GitHub. 
+2. Click Settings. 
+3. Click Pages in the sidebar. 
+4. Under Build and deployment, choose: 
+    * Source: Deploy from a branch 
+    * Branch: main 
+    * Folder: /root 
+5. Click Save. 
+6. Wait a few minutes. 
+7. Copy the live GitHub Pages URL and add it to your README. 
+GitHub notes that a Pages site needs an entry file like index.html, index.md, or README.md, and for a standard static web project, index.html is the expected choice.
+Add This to Your README
+## Live Demo
+
+[View my project here](your-github-pages-link)
+
+Part 8 - README Requirements:
+
+Your README should include, at minimum:
+Project Name Live Demo
+Link to your deployed GitHub Pages site.
+Problem
+What problem are you solving?
+Value
+What value does your project create?
+Project Plan
+Briefly describe what you intended to build and how you planned to approach it.
+Features
+Which features are complete?
+Which features would you build next?
+Technologies Used
+AI Tools Used
+Running the Project
+How can someone run your application?
+
+Mission Brief
+A good README tells the story of your project before anyone reads your code.
+
+Part 9 - Prompt History:
+
+Create a file in your repository named something like:
+prompt-history.md
+or
+prompts.md
+Include the prompts you used while building your application.
+This does not need to be every single prompt.
+Instead, include the prompts that best demonstrate your thinking throughout the project.
+Examples might include:
+* Planning prompts 
+* Feature requests 
+* Debugging conversations 
+* Questions you asked AI 
+* Follow-up questions 
+* Times you asked AI to explain code 
+
+Why We Ask For This
+We are not grading your writing.
+We are looking for evidence of how you collaborate with AI.
+Strong prompt histories often demonstrate:
+* Planning 
+* Curiosity 
+* Iteration 
+* Debugging 
+* Verification 
+
+Part 11 - Submission Checklist & Link
+
+Before submitting, verify that you have:
+☐ Public GitHub repository  ☐ Working GitHub Pages deployment link  ☐ Working application  ☐ README with required sections  ☐ README includes live demo link  ☐ Prompt history included  ☐ Multiple meaningful commits  ☐ Clear project structure  ☐ Features that demonstrate value  ☐ Code you can explain
+
+Before You Submit
+During your admissions interview, you'll have the opportunity to discuss your project with one of our reviewers.
+While every interview is a little different, you should be prepared to answer questions like:
+* What problem does your application solve?
+* What value does it create for the user?
+* Why did you choose this solution?
+* How did you decide what to build first?
+* How did AI help you during development?
+* Was there a time you questioned or challenged an AI suggestion?
+* What was the most interesting bug you encountered, and how did you solve it?
+* How did you verify that your application worked correctly?
+* If you had another weekend to improve your project, what would you add or change?
+* What part of your project are you most proud of, and why?
+These questions aren't designed to catch you off guard or test your memory. They're meant to help us understand how you think, how you solve problems, and how you work alongside AI.
+
+If you can answer these questions confidently, you've already demonstrated many of the habits we value in this program.
+
+Final Mission Brief
+Remember:
+Anyone can ask AI to generate code.
+Builders understand what they're building.
+Engineers understand why they're building it.
+We look forward to seeing what you create.
