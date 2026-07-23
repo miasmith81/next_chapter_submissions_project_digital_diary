@@ -5,7 +5,7 @@
 **Date:** July 22, 2026  
 **Generator:** Gemini 1.5 Flash, as identified in the supplied report  
 **Reviewer:** ChatGPT/Codex  
-**Human decision-maker:** Mausi  
+**Human decision-maker:** Mia
 **Current status:** Visual collection accepted; exact sizing pending
 
 The second collection corrected the first collection's visual direction. All 12 images follow the requested concepts, use a cohesive purple/lavender painterly style, are portrait PNGs, and avoid personal, medical, crisis, or diagnostic content.
@@ -40,12 +40,12 @@ The PDF was inspected as extracted text and rendered pages. No clipping, overlap
 | No unsafe or personal content | None observed | Pass |
 | No built-in polaroid | None observed | Pass |
 | Required names | Corrected by Codex | Pass after correction |
-| AI watermark | Present and intentionally accepted by Mausi | Accepted requirement change |
+| AI watermark | Present and intentionally accepted by Mia | Accepted requirement change |
 | Model documented | Report says Gemini 1.5 Flash | Pass based on supplied report |
 
 ## Watermark Decision
 
-Mausi superseded the original no-watermark requirement. She accepted the lower-right platform mark because it protects attribution and informs users that the images were AI-generated. It is no longer a rejection reason.
+Mia superseded the original no-watermark requirement. She accepted the lower-right platform mark because it protects attribution and informs users that the images were AI-generated. It is no longer a rejection reason.
 
 ## Filename Mapping
 
@@ -66,7 +66,7 @@ The earlier renamed copies were verified byte-for-byte when they were created. T
 
 ## Remaining Action
 
-The only unresolved collection requirement is exact size. Use `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`, then inspect every actual export. Do not mark the assets complete until each file measures exactly 1024 x 1280 or Mausi changes the requirement.
+The only unresolved collection requirement is exact size. Use `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`, then inspect every actual export. Do not mark the assets complete until each file measures exactly 1024 x 1280 or Mia changes the requirement.
 
 **Repository integration:** Pending final size verification  
 **Related commit:** Add after final integration

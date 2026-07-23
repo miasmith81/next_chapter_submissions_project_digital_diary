@@ -8,7 +8,7 @@
 **Reviewer:** ChatGPT/Codex  
 **Historical disposition:** Rejected; second iteration requested
 
-> This audit records the requirements and decision at the time of the first collection. Mausi later accepted Gemini's platform watermark as intentional AI disclosure. See `SECOND_COLLECTION_AUDIT.md` for current status.
+> This audit records the requirements and decision at the time of the first collection. Mia later accepted Gemini's platform watermark as intentional AI disclosure. See `SECOND_COLLECTION_AUDIT.md` for current status.
 
 Gemini delivered 12 abstract PNGs and a three-page self-audit. The collection was cohesive and avoided personal or crisis-related content, but it did not satisfy several objective requirements.
 

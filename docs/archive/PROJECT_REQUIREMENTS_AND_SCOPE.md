@@ -4,6 +4,10 @@
 
 **Next Chapter Submissions Project - A Digital Diary**
 
+**Applicant:** Mia Smith
+
+Project documentation should refer to the applicant as `Mia`, using `Mia Smith` only when a full name is needed.
+
 ## Product Purpose
 
 Build a responsive digital diary prototype for people dealing with mental-health challenges. It allows a user to record feelings and possible triggers while an experience is fresh, then revisit the entry later for personal reflection or optional discussion with a therapist.
@@ -25,6 +29,15 @@ The first working milestone must allow a user to:
 3. Revisit the entry later.
 
 Functionality must be verified before adding personalization, complex styling, images, or animation.
+
+## Submission Documentation Requirements
+
+- Keep one project `README.md` with the required project story, live demo when deployed, problem, value, plan, features, technologies, AI tools, and local-running instructions.
+- Maintain `docs/prompt_history.md` as a curated record of the prompts that best demonstrate how Mia collaborates with AI.
+- Prioritize evidence of planning, curiosity, iteration, debugging, verification, questions, follow-ups, and requests for code explanation.
+- Preserve actual prompt wording when it is important evidence, or link to the complete prompt when it is maintained separately.
+- Maintain meaningful commit history and keep reviewer-facing documentation synchronized with the actual repository.
+- Do not include secrets, private diary content, or unsupported claims about AI outputs or completed functionality.
 
 ## Privacy Boundary
 
@@ -67,7 +80,7 @@ Functionality must be verified before adding personalization, complex styling, i
 - Use exact 1024 x 1280 dimensions and portrait 4:5 composition.
 - Use a cohesive purple, blue, lilac, white, and warm-gold painterly system.
 - Do not include personal photos, identifiable people, readable text, unrelated logos, medical claims, diagnoses, crisis scenes, or copyrighted characters.
-- Preserve and disclose Gemini's lower-right platform watermark; Mausi accepted it to identify the artwork as AI-generated.
+- Preserve and disclose Gemini's lower-right platform watermark; Mia accepted it to identify the artwork as AI-generated.
 - Do not include a built-in polaroid border; CSS supplies the frame.
 - Rotate through all 12 and wrap to the first.
 - Verify every asset before repository integration.

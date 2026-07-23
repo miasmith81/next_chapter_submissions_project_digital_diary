@@ -99,9 +99,9 @@ ChatGPT/Codex is the lead planning, implementation, documentation, and verificat
 
 ### Gemini
 
-Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mausi accepted Gemini's lower-right mark as AI-generation disclosure. Exact sizing remains pending.
+Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mia accepted Gemini's lower-right mark as AI-generation disclosure. Exact sizing remains pending.
 
-Mausi preserves her own voice, challenges recommendations, makes the final decisions, and verifies important claims before including AI-assisted work.
+Mia preserves her own voice, challenges recommendations, makes the final decisions, and verifies important claims before including AI-assisted work.
 
 ## Running Locally
 
@@ -117,13 +117,14 @@ This static project requires no package installation or build command.
 ```text
 next_chapter_submissions_project_digital_diary/
 ├── AGENTS.md
-├── BUILD_LOG.md
 ├── LICENSE
 ├── README.md
 ├── assets␠/
 ├── css/
 │   └── style.css
 ├── docs/
+│   ├── BUILD_LOG.md
+│   ├── prompt_history.md
 │   └── archive/
 │       ├── AI_AGENT_PROMPT_LIBRARY.md
 │       ├── AI_USAGE_LOG.md
@@ -149,7 +150,6 @@ next_chapter_submissions_project_digital_diary/
 ├── index.html
 ├── js/
 │   └── main.js
-└── prompt-history.md
 ```
 
 `assets␠/` uses `␠` to make the existing trailing space in that directory name visible.
@@ -167,21 +167,21 @@ Entries in this admissions prototype are stored in the current browser using `lo
 
 A username and password screen written entirely in client-side JavaScript would not provide real authentication. Secure authentication and per-user backend storage are future production features.
 
-## Documentation
+## Project Documentation and AI Collaboration
 
-- [Build Log](./BUILD_LOG.md)
-- [Prompt History](./prompt-history.md)
-- [AI Usage Log](./docs/archive/AI_USAGE_LOG.md)
-- [AI Agent Prompt Library](./docs/archive/AI_AGENT_PROMPT_LIBRARY.md)
-- [Asset Generation Brief](./docs/archive/ASSET_GENERATION_BRIEF.md)
-- [Live Documentation Workflow](./docs/archive/DOCUMENTATION_WORKFLOW.md)
-- [Interview Preparation](./docs/archive/INTERVIEW_PREP.md)
-- [First Image Audit](./docs/archive/PLACEHOLDER_IMAGE_AUDIT.md)
-- [Second Image Audit](./docs/archive/SECOND_COLLECTION_AUDIT.md)
-- [Privacy and Limitations](./docs/archive/PRIVACY_AND_LIMITATIONS.md)
-- [Project Plan](./docs/archive/PROJECT_PLAN.md)
-- [Requirements and Scope](./docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md)
-- [Archived Documentation Index](./docs/archive/ARCHIVE_INDEX.md)
+These records show how the project was planned, developed, questioned, revised, and verified. Together, they give reviewers and future developers a clear view of both the application and the human-AI collaboration behind it.
+
+| Document | What it documents | How it relates to the build |
+| --- | --- | --- |
+| [Prompt History](./docs/prompt_history.md) | A curated chronological record of the prompts, questions, follow-ups, decisions, and verification conversations that best demonstrate Mia's thinking. | Shows planning, curiosity, iteration, debugging, verification, and how AI recommendations influenced—or were challenged during—the build. |
+| [AI Agent Prompt Library](./docs/archive/AI_AGENT_PROMPT_LIBRARY.md) | Reusable prompts, highly effective `4/5` and `5/5` examples, partial results, improvements, and lessons learned. | Shows how Mia selects and directs different AI tools and improves prompts based on actual results. |
+| [Build Log](./docs/BUILD_LOG.md) | A chronological record of project decisions, implementation milestones, unexpected results, testing, and remaining work. | Connects conversations and prompts to concrete changes in the application. |
+| [AI Usage Log](./docs/archive/AI_USAGE_LOG.md) | The responsibilities assigned to each AI tool, model information when known, outputs produced, and Mia's final decisions. | Demonstrates intentional tool selection, human oversight, and independent verification of AI claims. |
+| [Project Requirements and Scope](./docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md) | The admissions requirements, approved MVP, feature boundaries, and responsible limitations. | Shows how the Mission Brief was translated into a focused HTML, CSS, and JavaScript project. |
+| [Project Plan](./docs/archive/PROJECT_PLAN.md) | The planned implementation phases and verification checkpoints. | Helps another developer understand the build order and why features were prioritized. |
+| [Interview Preparation](./docs/archive/INTERVIEW_PREP.md) | Mia's original reasoning and refined explanations for likely reviewer questions. | Connects the project's technical decisions to explanations Mia can confidently give in her own voice. |
+| [Documentation Workflow](./docs/archive/DOCUMENTATION_WORKFLOW.md) | The standing process for recording prompts, decisions, bugs, tests, and verification as work happens. | Shows that documentation is part of the development process rather than something reconstructed only before submission. |
+| [Archived Documentation Index](./docs/archive/ARCHIVE_INDEX.md) | A complete guide to the supporting plans, audits, prompts, and evidence. | Gives reviewers and future developers one organized entry point into the project's full working record. |
 
 ## Development Status
 
@@ -189,7 +189,7 @@ The project is in the documentation and MVP-foundation stage. The second image c
 
 ## Author
 
-Mia Smith-Petross - [miasmith81](https://github.com/miasmith81)
+Mia Smith - [miasmith81](https://github.com/miasmith81)
 
 ## License
 

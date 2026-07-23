@@ -2,12 +2,12 @@
 
 ## Purpose
 
-This document is a curated library of prompts that demonstrate how Mausi directs AI agents throughout the project. It is different from `prompt-history.md`:
+This document is a curated library of prompts that demonstrate how Mia directs AI agents throughout the project. It is different from `docs/prompt_history.md`:
 
-- `prompt-history.md` is the chronological record of material project interactions.
+- `docs/prompt_history.md` is the chronological record of material project interactions.
 - This library organizes the strongest reusable prompts by purpose and includes selected prompts that did not work as expected, what was learned, and how they were improved.
 
-The goal is to show prompt quality, agent selection, iteration, verification, and Mausi's role as the project orchestrator.
+The goal is to show prompt quality, agent selection, iteration, verification, and Mia's role as the project orchestrator.
 
 ## Recording Standard
 
@@ -22,11 +22,19 @@ Each prompt entry should capture:
 7. Actual output
 8. What worked well
 9. What did not work as expected
-10. How Mausi revised or redirected the agent
+10. How Mia revised or redirected the agent
 11. Verification performed
 12. Reuse guidance
 
 Do not include passwords, authentication codes, access tokens, private diary entries, or other sensitive information.
+
+## Internal Prompt-Effectiveness Ratings
+
+These ratings are a project learning tool, not grades assigned by Next Chapter.
+
+- **5/5:** The prompt clearly defines the goal, context, scope, constraints, expected result, and verification.
+- **4/5:** The prompt is strong and effective but could add one useful constraint, acceptance criterion, organization improvement, or verification step.
+- Prompts below `4/5` may still be preserved when they teach an important lesson about revision, failure, or partial results.
 
 ## Recurring Prompts
 
@@ -38,7 +46,9 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 **Reusable prompt:**
 
-> Review the work completed in this task and update every affected project document before declaring the task complete. At minimum, consider `prompt-history.md`, `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`, `docs/archive/AI_USAGE_LOG.md`, `BUILD_LOG.md`, `README.md`, `docs/archive/PROJECT_PLAN.md`, and any relevant requirements, audit, privacy, interview, or evidence file. Record the exact prompt when it is important evidence, the AI agent and model when known, what I accepted or rejected, the files changed, and how the result was verified. Do not create artificial edits in documents that were not affected. Do not include secrets or private diary content.
+> Review the work completed in this task and update every affected project document before declaring the task complete. At minimum, consider `docs/prompt_history.md`, `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`, `docs/archive/AI_USAGE_LOG.md`, `docs/BUILD_LOG.md`, `README.md`, `docs/archive/PROJECT_PLAN.md`, and any relevant requirements, audit, privacy, interview, or evidence file. Record the exact prompt when it is important evidence, the AI agent and model when known, what I accepted or rejected, the files changed, and how the result was verified. Do not create artificial edits in documents that were not affected. Do not include secrets or private diary content.
+
+**Current rating:** 5/5. The prompt defines the documents to consider, the evidence to capture, privacy boundaries, and a rule against artificial edits.
 
 **Expected result:** Relevant documentation is synchronized with the actual project state.
 
@@ -47,14 +57,16 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 ### 2. Teaching-Mode Rubber Duck
 
 **Best agent:** ChatGPT  
-**Use when:** Mausi wants to develop her own explanation before receiving a polished answer  
-**Why ChatGPT:** It can ask focused follow-up questions, reflect Mausi's meaning, and help refine an answer without replacing her voice.
+**Use when:** Mia wants to develop her own explanation before receiving a polished answer
+**Why ChatGPT:** It can ask focused follow-up questions, reflect Mia's meaning, and help refine an answer without replacing her voice.
 
 **Reusable prompt:**
 
 > Work with me in Teaching Mode and rubber-duck this question one step at a time. Ask me focused questions before refining my answer. Preserve my meaning, tone, and personal reasoning. Clearly separate my original answer from your suggested refinement, explain why the revision is stronger, and let me make the final decision. Do not invent project evidence or describe features we have not built and verified.
 
-**Expected result:** A professional explanation grounded in Mausi's own thinking and real project evidence.
+**Current rating:** 5/5. The prompt clearly assigns roles, protects Mia's voice, requires explanation, preserves final decision authority, and prohibits invented evidence.
+
+**Expected result:** A professional explanation grounded in Mia's own thinking and real project evidence.
 
 ### 3. Execution With Documentation and Verification
 
@@ -65,6 +77,8 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 **Reusable prompt:**
 
 > Work in Execution Mode. Inspect the current repository and implement only the defined task: [INSERT TASK]. Preserve unrelated work and existing project decisions. After implementation, run the checks appropriate to the change, inspect the resulting differences, and update all affected documentation. Report exactly what changed, what was tested, what remains pending, and any limitation you could not independently verify.
+
+**Current rating:** 5/5. The prompt sets a narrow scope, preserves existing work, requires testing and documentation, and distinguishes verified results from remaining limitations.
 
 **Expected result:** A focused implementation with evidence instead of an unsupported completion claim.
 
@@ -88,7 +102,7 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 > Before this work is committed, compare the actual repository changes with the requirements and current project documentation. Identify missing tests, unsupported claims, stale statuses, undocumented prompts, or sensitive information. Update only the affected documentation, run the relevant verification, and propose a concise commit message. Do not commit or push unless I explicitly authorize it.
 
-**Expected result:** A clean, explainable milestone ready for Mausi's review.
+**Expected result:** A clean, explainable milestone ready for Mia's review.
 
 ### 6. Documentation Naming and Archive Integrity
 
@@ -102,7 +116,21 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 **Expected result:** A lossless documentation reorganization with one root `README.md`, dedicated archive indexes, valid links, and a documentation-only Git diff.
 
-**Project example:** Prompt 14 in the root `prompt-history.md` records the exact naming correction request and its verification.
+**Project example:** Prompt 14 in `docs/prompt_history.md` records the exact naming correction request and its verification.
+
+### 7. Project Identity and Attribution Guardrail
+
+**Best agent:** Codex
+
+**Use when:** A project needs a public-facing name or attribution rule that differs from conversational or platform-specific naming
+
+**Reusable prompt:**
+
+> For this project documentation, refer to me as Mia. When a full name is required, use Mia Smith. Apply this consistently across current project documentation and durable repository instructions. Keep this rule limited to this project and do not infer that it applies to other organizations, websites, platforms, or conversations. Audit the final documentation for excluded name forms before reporting completion.
+
+**Current rating:** 5/5. The prompt defines the approved short and full names, limits the rule to the current project, prevents cross-platform assumptions, and requires a consistency audit.
+
+**Privacy note:** The original instruction is summarized in Prompt 16 rather than reproduced verbatim because it contains name forms intentionally excluded from the Next Chapter documentation.
 
 ## Prompts That Produced Precise Execution
 
@@ -135,12 +163,17 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 
 ### Documentation Restoration Request
 
-**Agent:** Codex  
+**Agent:** Codex
+
+**Current rating:** 4/5
+
 **Original prompt:**
 
 > Chat please give me all the docs and make sure you are give me the most up to date because for some reason i no longer have a docs folder with all the docs
 
 **What made it effective:** It clearly stated the missing artifact, completeness requirement, and current-version requirement.
+
+**Why it is not rated 5/5:** It did not specify the required folder structure, evidence boundaries, or archive-integrity verification. Those safeguards were added in the stronger reusable version below.
 
 **Result:** Codex reconstructed the documentation set from the current project record, clearly disclosed unavailable source evidence, created a ZIP, and passed an archive-integrity test.
 
@@ -196,6 +229,34 @@ Do not include passwords, authentication codes, access tokens, private diary ent
 > Chat I want this prompt to Codex to be stored in an AI Agents prompt doc. I want to create a AI Agent doc that records recurring prompts, prompts that gave me precise execution, and maybe show a few prompts that did not work as well as I was expecting
 
 **Outcome:** Created this curated AI Agent Prompt Library, connected it to the repository documentation workflow, and preserved the request in the chronological prompt history.
+
+## Selected 4/5 Prompt — Part 9 Verification and Documentation Strategy
+
+**Agent:** ChatGPT/Codex
+
+**Date:** July 23, 2026
+
+**Category:** Planning, curiosity, iteration, verification, and reviewer communication
+
+**Rating:** 4/5
+
+**Actual prompt:**
+
+> Chat I need to apologize. I am sorry I kinda over reacted because I went back and went to the Technical Pre-Course online and went through of the requirements of the project and it seems like we are staying in scope with just additional documentation which I love and want to keep tracking and updating along with the required docs. Really the only thing that I updated was the archive folder was in the docs folder like this docs/archive and the archive folder was not underneath the docs folder so I fixed that. So what I would like us to make sure we are and keep doing is keep track of my prompt history and recurring or prompts that gave a 5 out of 5 star or even 4 out of 5 lets show what the actual prompt was in our prompt file AI_AGENT_PROMPT_LIBRARY but the really important prompts to follow that they are looking for is verify this but in Part 9 Prompt History requirements the reviewer is looking at prompts that best demonstrate your thinking throughout the project: examples might include: Planning prompts, Feature requests, Debugging conversations, Questions you asked AI, Follow-up questions, Times you asked AI to explain code. Why they are asking for this...they are looking for evidence of how I collaborate with AI. They are saying that strong prompt histories often demonstrate: planning, curiosity, iteration, debugging, verification. So lets keep tracking my prompt history and saving really good prompts in the prompt library but the requirements I just spoke to you about lets make sure we really make sure we can show that prompt history. When I start building the actual code with Codex we will have a lot of the prompting history they are looking for too. I need you to look at I updated our file structure and update the README. So I would like to know your option about this I idea I have: (I also want and hope you have been documenting our interaction and how we have been interacting. If you feel you have fell short on documenting our interaction and my interactions with my other AI Tools please go back in our conversations and update our doc.) I have additional documentation which I think is going to make me stand out and I love that so thank you for following my vision and direction and what I wanted the reviewer to see how I can document all of my interactions with my AI tools and really be detailed about it. But what I was thinking is that maybe I could have an explanation next to the linked page describing the document and why I have it and what its documenting and maybe how it relates to the build of the project and how it could help another developer see my whole vision of the project and the relationship I have with my AI Tools. Now if you can review and respond to everything step by step.
+
+**Why it earned 4/5:**
+
+- Mia independently verified the rubric before redirecting the work.
+- It clearly identifies the reviewer signals the documentation should demonstrate.
+- It distinguishes chronological prompt history from a reusable prompt library.
+- It asks for an audit of prior documentation rather than assuming it is complete.
+- It proposes a reviewer- and developer-centered explanation beside each document link.
+
+**What would make it 5/5:** Divide the request into numbered deliverables and add explicit acceptance checks for valid links, documentation-only scope, and the exact files to update.
+
+**Outcome:** The request produced a complete Part 9 audit, a reviewer-facing README documentation map, a collaboration-evidence table, prompt-effectiveness ratings, path synchronization, and an explicit limitation on inaccessible conversations from other AI platforms.
+
+**Full chronological record:** See Prompt 15 in `docs/prompt_history.md`.
 
 ## Future Entries
 

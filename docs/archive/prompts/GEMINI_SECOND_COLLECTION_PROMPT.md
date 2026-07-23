@@ -61,4 +61,4 @@ Before claiming completion, provide a table with image number, filename, theme, 
 
 ## Result
 
-Gemini returned 12 cohesive second-iteration images and a four-page report. Independent review confirmed concepts, palette, style, portrait orientation, and safety. Actual files were 928 x 1152 and used Gemini-generated filenames despite the report claiming 1024 x 1280 and sequential names. Codex corrected filenames. Mausi later accepted the platform watermark. Exact sizing remains pending.
+Gemini returned 12 cohesive second-iteration images and a four-page report. Independent review confirmed concepts, palette, style, portrait orientation, and safety. Actual files were 928 x 1152 and used Gemini-generated filenames despite the report claiming 1024 x 1280 and sequential names. Codex corrected filenames. Mia later accepted the platform watermark. Exact sizing remains pending.

@@ -2,7 +2,7 @@
 
 ## Standing Rule
 
-Mausi should not have to prompt ChatGPT/Codex to update documentation after every material change. Documentation is part of the work itself and must be updated before a material task is considered complete.
+Mia should not have to prompt ChatGPT/Codex to update documentation after every material change. Documentation is part of the work itself and must be updated before a material task is considered complete.
 
 ## Source of Truth
 
@@ -12,13 +12,17 @@ At the beginning of future work, inspect the current repository documentation be
 
 The direct project root contains the repository's only `README.md`. Archived documentation uses `docs/archive/ARCHIVE_INDEX.md`, and archived evidence uses `docs/archive/evidence/EVIDENCE_INDEX.md`.
 
+## Project Naming Standard
+
+Use `Mia` throughout Next Chapter project documentation. Use `Mia Smith` only when a full legal name is needed. Do not use a nickname or an alternate or hyphenated surname in this project's documentation. Naming rules for other organizations, websites, or platforms must be handled separately.
+
 ## Documentation Triggers
 
 Update documentation whenever:
 
 - A new AI prompt is written or submitted.
 - An AI tool or model produces output.
-- Mausi accepts, rejects, revises, or supersedes a requirement.
+- Mia accepts, rejects, revises, or supersedes a requirement.
 - An AI recommendation is challenged or independently verified.
 - A file is added, renamed, resized, removed, or integrated.
 - Architecture, scope, privacy, design, or build order changes.
@@ -30,10 +34,10 @@ Update documentation whenever:
 
 Update every affected document without creating artificial edits in unrelated files.
 
-- `prompt-history.md` - prompts, iterations, response summaries, verification, and decisions
+- `docs/prompt_history.md` - prompts, iterations, response summaries, verification, and decisions
 - `docs/archive/AI_AGENT_PROMPT_LIBRARY.md` - curated reusable prompts, precise examples, partial results, improvements, and lessons
 - `docs/archive/AI_USAGE_LOG.md` - tool, model, assigned task, accepted/rejected output, and human judgment
-- `BUILD_LOG.md` - chronological work, unexpected results, decisions, lessons, tests, and commits
+- `docs/BUILD_LOG.md` - chronological work, unexpected results, decisions, lessons, tests, and commits
 - `README.md` - public-facing features, AI contributions, structure, and current status
 - `docs/archive/PROJECT_PLAN.md` - remaining work and phase status
 - `docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md` - approved scope and requirement changes
@@ -53,8 +57,8 @@ Each material prompt record should include:
 6. Why it was structured that way
 7. Response summary
 8. Follow-up or iteration
-9. What Mausi accepted
-10. What Mausi rejected or changed
+9. What Mia accepted
+10. What Mia rejected or changed
 11. Verification method and result
 12. Files affected
 13. Related commit when available
@@ -67,7 +71,7 @@ Before finishing a material task:
 2. Update every relevant document.
 3. Preserve useful original AI reports as evidence.
 4. Separate AI claims from independently verified facts.
-5. Record Mausi as the final decision-maker.
+5. Record Mia as the final decision-maker.
 6. Leave unfinished work marked pending.
 7. Rebuild and test the downloadable bundle when working outside the repository.
 

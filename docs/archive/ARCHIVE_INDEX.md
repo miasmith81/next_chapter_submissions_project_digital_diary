@@ -11,8 +11,8 @@ This folder is the archived working record for the Next Chapter Admissions Proje
 ## Admissions Preparation
 
 - [Interview Preparation](./INTERVIEW_PREP.md) — refined current interview answers and intentionally pending questions
-- Root [Prompt History](../../prompt-history.md) — material prompts, outcomes, decisions, and follow-ups
-- Root [Build Log](../../BUILD_LOG.md) — chronological project decisions and progress
+- [Prompt History](../prompt_history.md) — material prompts, outcomes, decisions, follow-ups, and Part 9 collaboration evidence
+- [Build Log](../BUILD_LOG.md) — chronological project decisions and progress
 
 ## AI Use and Documentation Practice
 

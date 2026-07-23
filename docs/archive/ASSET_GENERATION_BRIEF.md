@@ -9,9 +9,9 @@ Generate 12 cohesive, non-personal illustrations for the diary's automatic image
 **AI tool:** Gemini  
 **Model:** Gemini 1.5 Flash, as identified in the second supplied report  
 **Status:** Second collection received; filenames corrected by Codex; exact sizing pending  
-**Human decision-maker:** Mausi
+**Human decision-maker:** Mia
 
-Gemini proposes visual assets. Mausi reviews, accepts, rejects, revises, and approves files. ChatGPT/Codex independently verifies outputs and handles deterministic project organization.
+Gemini proposes visual assets. Mia reviews, accepts, rejects, revises, and approves files. ChatGPT/Codex independently verifies outputs and handles deterministic project organization.
 
 ## Required Output
 
@@ -56,7 +56,7 @@ Gemini proposes visual assets. Mausi reviews, accepts, rejects, revises, and app
 - [x] Sequential names after Codex created renamed copies.
 - [x] Cohesive palette and style.
 - [x] No readable text, unrelated logos, personal content, or unsafe imagery.
-- [x] Gemini platform watermark documented and accepted by Mausi.
+- [x] Gemini platform watermark documented and accepted by Mia.
 - [x] No built-in polaroid border.
 - [ ] Crop test inside the actual CSS frame.
 - [ ] Web optimization test.
@@ -73,6 +73,6 @@ Gemini returned 12 distinct 1376 x 768 landscape PNG files with an abstract grad
 
 Gemini 1.5 Flash returned 12 improved portrait PNG files matching the requested concepts and painterly palette. Actual metadata showed 928 x 1152, despite the report claiming 1024 x 1280. Gemini also supplied generated filenames. Codex created byte-identical sequential copies and verified the ZIP.
 
-Mausi superseded the original no-watermark requirement and accepted the visible platform mark as AI disclosure. Exact sizing is the only unresolved asset requirement.
+Mia superseded the original no-watermark requirement and accepted the visible platform mark as AI disclosure. Exact sizing is the only unresolved asset requirement.
 
 See `docs/archive/PLACEHOLDER_IMAGE_AUDIT.md`, `docs/archive/SECOND_COLLECTION_AUDIT.md`, and `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`.

@@ -5,6 +5,8 @@
 - Confirm repository, local path, branch, and remote.
 - Add `AGENTS.md` and the complete documentation set.
 - Maintain a curated AI Agent Prompt Library alongside the chronological prompt history.
+- Keep `docs/prompt_history.md` and `docs/BUILD_LOG.md` directly linked and explained in the root README.
+- Map selected prompts to the Part 9 collaboration signals without claiming implementation evidence before it exists.
 - Keep the root `README.md` as the only file with that name and maintain archived indexes under `docs/archive/`.
 - Verify Codex loads the repository instructions.
 - Make the first meaningful documentation commit.
@@ -45,7 +47,7 @@
 ## Phase 5 - Visual Identity
 
 - Apply gradients, fonts, glassmorphism, binding, gutters, and shadows.
-- Preserve Mausi's decision to accept Gemini's visible AI watermark.
+- Preserve Mia's decision to accept Gemini's visible AI watermark.
 - Correct image dimensions from 928 x 1152 to exactly 1024 x 1280.
 - Independently verify final exports and sequential filenames.
 - Add approved files to `assets/frames/`.
@@ -70,7 +72,8 @@
 ## Phase 8 - Documentation and Deployment
 
 - Complete every README requirement.
-- Curate the strongest prompts.
+- Curate the strongest prompts and preserve their actual wording or a stable link to the complete prompt.
+- Include planning, curiosity, iteration, debugging, verification, follow-up, and code-explanation evidence from real project work.
 - Update tool/model records.
 - Deploy through GitHub Pages.
 - Test the live link on desktop and mobile.
