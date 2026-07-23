@@ -49,7 +49,10 @@
 - Apply gradients, fonts, glassmorphism, binding, gutters, and shadows.
 - Preserve Mia's decision to accept Gemini's visible AI watermark.
 - Correct image dimensions from 928 x 1152 to exactly 1024 x 1280.
-- Independently verify final exports and sequential filenames.
+- Add `AI-generated artwork — Directed by Mia` visibly and consistently to every final image.
+- Preserve original generated exports before any crop, resize, or format conversion.
+- Check the final post-processed files for C2PA and SynthID signals and record the result without overstating provenance.
+- Independently verify final dimensions, disclosure placement, exports, and sequential filenames.
 - Add approved files to `assets/frames/`.
 - Implement image rotation and wraparound.
 

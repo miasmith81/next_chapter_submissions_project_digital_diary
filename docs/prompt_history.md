@@ -8,15 +8,15 @@ The admissions requirements ask for selected prompts that best demonstrate how M
 
 | Reviewer signal | Current evidence | What it demonstrates |
 | --- | --- | --- |
-| Planning | Prompts 1, 3, 11, 13, 14, and 15 | Defining the MVP, build order, documentation system, repository structure, and reviewer experience before implementation |
+| Planning | Prompts 1, 3, 11, 13, 14, 15, and 19 | Defining the MVP, build order, documentation system, repository structure, reviewer experience, and responsible AI-asset disclosure before implementation |
 | Feature requests | Prompts 1, 3, 4, 5, and 6 | Defining the diary experience, interview-support needs, and visual-asset requirements while separating requested features from verified completion |
-| Curiosity and questions | Prompts 2, 8, 9, and 15 | Testing assumptions, asking how Codex should work beside the code, and checking the official requirements before redirecting the project |
+| Curiosity and questions | Prompts 2, 8, 9, 15, and 19 | Testing assumptions, asking how Codex should work beside the code, checking official requirements, and questioning how viewers can verify that artwork was AI-generated |
 | Iteration | Prompts 4, 5, 6, 12, 14, 15, and 17 | Improving image prompts, strengthening documentation, correcting structure, refining the prompt-history strategy, and learning from prompts that did not work |
 | Debugging | Prompts 4 through 6 | Investigating why generated assets missed orientation, naming, and exact-size requirements; application-code debugging will be added from real build work |
-| Verification | Prompts 2, 5, 6, 13, 14, 15, and 18 | Challenging security assumptions, inspecting actual files instead of trusting AI reports, checking Git state, validating links, comparing the project with the rubric, and auditing whether approved documentation requirements were actually implemented |
+| Verification | Prompts 2, 5, 6, 13, 14, 15, 18, and 19 | Challenging security assumptions, inspecting actual files instead of trusting AI reports, checking Git state, validating links, comparing the project with the rubric, auditing approved documentation, and separating visible disclosure from technical provenance |
 | Follow-up questions | Prompts 6, 8, 9, 15, and 18 | Building on prior answers, checking the completed documentation, and requiring correction instead of treating each AI response as final |
 | Unsuccessful prompts and lessons | Prompts 4 through 6, 17, and 18 | Preserving what did not work, identifying missing instructions or documentation, rating prompt quality honestly, and showing how the next prompt or update improved |
-| Human judgment and orchestration | Prompts 2, 13, 15, and 18 | Assigning responsibilities across AI tools, challenging recommendations, catching omissions, approving corrections, and retaining final decision authority |
+| Human judgment and orchestration | Prompts 2, 13, 15, 18, and 19 | Assigning responsibilities across AI tools, challenging recommendations, catching omissions, setting responsible disclosure requirements, approving corrections, and retaining final decision authority |
 | Requests to explain code | Pending implementation | These will be recorded when Mia begins building, reviewing, and debugging the HTML, CSS, and JavaScript |
 
 This map will grow from real project work. Categories marked pending are not represented as complete before supporting conversations and code evidence exist.
@@ -322,6 +322,32 @@ This map will grow from real project work. Categories marked pending are not rep
 **Outcome:** Expanded the rating definitions from `1/5` through `5/5`, clarified that prompt quality and AI outcome quality are different measurements, added explicit ratings to the strong Gemini examples and every unsuccessful example, and strengthened the AI Usage Log and README description of human oversight.
 
 **Verification required:** Confirm that every selected precise-execution and unsuccessful example has an explicit rating, all ratings include a reason, no AI outcome is treated as verified merely because the prompt was highly rated, and all documentation checks continue to pass.
+
+## Prompt 19 — Require visible AI-art disclosure even when technical provenance may be lost
+
+**Date and stage:** July 23, 2026 — visual-asset provenance and disclosure decision
+
+**AI tools discussed:** Gemini, ChatGPT/Codex, and OpenAI image generation
+
+**Task type:** Curiosity, responsible AI use, provenance verification, and human-directed requirement change
+
+**Exact provenance question:**
+
+> Chat this is awesome that you can also generate images because I always seem to run into the problem using Gemini that he never names the files correctly that I ask and the sizing is always off so know that you can be precise will make my life a lot easier when I need precision and not just beautiful images to look at. One big thing I want to make sure that you also show in your images is that it was actually AI generated by some kind of sign. With using Gemini in image generation you will see a small star like image in the lower right corner of the image and that sign actually protects me as showing anyone viewing the image that I did not create or copy the image but that I orchestrated an AI generated image. Do you show some kind of proof that when you create an image it clearly shows it was AI generated?
+
+**AI response and verified distinction:** ChatGPT/Codex checked current official OpenAI guidance and explained that OpenAI-generated images include C2PA Content Credentials and SynthID provenance signals, but these signals are not necessarily visible to a viewer. C2PA metadata can be removed during processing, and cropping or resizing may affect detectable provenance. A visible badge is disclosure rather than cryptographic proof, so the strongest practice combines visible disclosure, preserved originals, final-file verification, and documented evidence.
+
+**Exact final decision:**
+
+> Chat I love this!!! We are really learning how to work together and building a strong foundation. I love the idea that we do not take Gemini's identification that the image was AI generated but that we disclose that the images that we create will always state that these images were AI generated and orchestrated by me and since we possibly could be cropping original AI generated images and possibly lose the C2PA and SynthID verification lets always state that these images were AI generated directed by me to protect me.
+
+**Human decision:** Mia established a generator-independent final-asset rule. Every final AI-created image must visibly state `AI-generated artwork — Directed by Mia`. A Gemini mark, C2PA metadata, or SynthID signal can provide additional provenance, but none replaces the required visible disclosure.
+
+**Implementation boundary:** The project will preserve original generated files, apply exact dimensions and the visible disclosure to final project-ready files, verify supported provenance signals on the final exports, and report the result honestly. A missing signal after processing will not be misrepresented as proof that an image was not AI-generated.
+
+**Requirement change:** The earlier “no readable text” rule now has one approved exception: the required AI-generation disclosure. Exact sizing is no longer the only unresolved asset requirement; disclosure placement, final-file provenance verification, and display testing are also pending.
+
+**Files affected:** `AGENTS.md`, `README.md`, `docs/prompt_history.md`, `docs/BUILD_LOG.md`, `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`, `docs/archive/AI_USAGE_LOG.md`, `docs/archive/ASSET_GENERATION_BRIEF.md`, `docs/archive/PROJECT_PLAN.md`, `docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md`, and `docs/archive/SECOND_COLLECTION_AUDIT.md`.
 
 ## Ongoing Recording Standard
 

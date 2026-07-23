@@ -66,7 +66,19 @@ The earlier renamed copies were verified byte-for-byte when they were created. T
 
 ## Remaining Action
 
-The only unresolved collection requirement is exact size. Use `docs/archive/prompts/GEMINI_EXACT_SIZE_PROMPT.md`, then inspect every actual export. Do not mark the assets complete until each file measures exactly 1024 x 1280 or Mia changes the requirement.
+At the time of the original audit, exact size was the only unresolved collection requirement. Mia added a new final-asset disclosure and provenance rule on July 23, 2026.
 
-**Repository integration:** Pending final size verification  
+Before final integration:
+
+1. Produce or prepare each image at exactly 1024 x 1280.
+2. Add the visible text `AI-generated artwork — Directed by Mia`.
+3. Preserve the original generated export separately.
+4. Check each final post-processed file for C2PA and SynthID signals.
+5. Record whether supported provenance signals were detected without claiming that a missing signal means the artwork was not AI-generated.
+6. Verify disclosure placement inside the actual diary frame.
+
+Do not mark the assets complete until size, disclosure, provenance reporting, and display verification pass or Mia changes the requirement.
+
+**Repository integration:** Pending final size, disclosure, provenance, and display verification
+
 **Related commit:** Add after final integration

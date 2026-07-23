@@ -79,11 +79,15 @@ Functionality must be verified before adding personalization, complex styling, i
 - Use `frame01.png` through `frame12.png`.
 - Use exact 1024 x 1280 dimensions and portrait 4:5 composition.
 - Use a cohesive purple, blue, lilac, white, and warm-gold painterly system.
-- Do not include personal photos, identifiable people, readable text, unrelated logos, medical claims, diagnoses, crisis scenes, or copyrighted characters.
-- Preserve and disclose Gemini's lower-right platform watermark; Mia accepted it to identify the artwork as AI-generated.
+- Do not include personal photos, identifiable people, unrelated readable text, logos, medical claims, diagnoses, crisis scenes, or copyrighted characters.
+- Every final AI-created image must visibly state `AI-generated artwork — Directed by Mia`; this disclosure is the only approved readable text inside the final asset.
+- Preserve a generator's platform watermark when Mia approves it, but do not depend on a generator-specific mark as the project's only disclosure.
+- Preserve C2PA and SynthID provenance when available. Verify the final post-processed file before claiming either signal remains.
+- If provenance metadata or an invisible watermark cannot be verified after cropping, resizing, or conversion, keep the visible disclosure and record the technical result honestly.
+- Preserve original generated exports separately from final project-ready files.
 - Do not include a built-in polaroid border; CSS supplies the frame.
 - Rotate through all 12 and wrap to the first.
-- Verify every asset before repository integration.
+- Verify dimensions, filename, visible disclosure, display crop, safety, and available provenance signals for every final asset before repository integration.
 
 ## Postponed Features
 

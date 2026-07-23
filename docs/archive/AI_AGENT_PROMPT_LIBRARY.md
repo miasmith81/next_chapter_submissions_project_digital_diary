@@ -136,6 +136,22 @@ The score evaluates the quality of the prompt, not whether the AI obeyed it. A `
 
 **Privacy note:** The original instruction is summarized in Prompt 16 rather than reproduced verbatim because it contains name forms intentionally excluded from the Next Chapter documentation.
 
+### 8. AI Image Disclosure and Provenance Guardrail
+
+**Best agent:** Codex for repository requirements and verification; image-generation tool for artwork
+
+**Use when:** Generating, editing, cropping, resizing, naming, or integrating any AI-created project image
+
+**Reusable prompt:**
+
+> Create or prepare the approved AI-generated artwork using the project style and scene requirements. Preserve the original generated export separately. Produce the final file at exactly 1024 x 1280 pixels, name it according to the approved `frame01.png` through `frame12.png` sequence, and place the visible disclosure `AI-generated artwork — Directed by Mia` consistently in the lower-right corner without copying a generator logo or watermark. Check the final post-processed file for supported C2PA and SynthID signals, record what is detected, and do not claim provenance survived if it cannot be verified. Show the final image to Mia for visual approval before repository integration.
+
+**Current rating:** 5/5. The prompt defines creative responsibility, preservation of originals, exact dimensions, deterministic naming, visible disclosure, technical provenance verification, honest reporting, and human approval.
+
+**Expected result:** A project-ready image that remains transparently disclosed as AI-generated even if invisible provenance signals are lost during processing.
+
+**Project example:** Prompt 19 in `docs/prompt_history.md` records the question, verified distinction, and Mia's final disclosure decision.
+
 ## Prompts That Produced Precise Execution
 
 ### Exact Gemini Image-Size Correction

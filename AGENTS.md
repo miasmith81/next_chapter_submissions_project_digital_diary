@@ -47,6 +47,9 @@ Mia is the final decision-maker for project scope, design acceptance, requiremen
 - Codex created and verified sequential copies named `frame01.png` through `frame12.png`.
 - Mia intentionally accepted Gemini's lower-right platform mark as AI-generation disclosure.
 - The actual supplied files remain 928 x 1152.
-- Exact 1024 x 1280 sizing and final repository integration are pending.
+- Every final AI-created image must visibly state `AI-generated artwork — Directed by Mia`.
+- Preserve C2PA and SynthID provenance when available, but verify the final post-crop or post-resize file before claiming either signal remains.
+- If technical provenance is missing or cannot be verified, retain the visible disclosure and record the verification result honestly.
+- Exact 1024 x 1280 sizing, visible-disclosure approval, provenance verification, and final repository integration are pending.
 
 See `docs/archive/SECOND_COLLECTION_AUDIT.md` for evidence.

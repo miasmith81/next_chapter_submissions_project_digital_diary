@@ -116,10 +116,22 @@ This chronological log records significant project decisions, changes, verificat
 - Kept the tools' roles accurate: Mia carries context and decisions across separate platforms; the AI tools are not described as automatically communicating with one another.
 - Left the correction uncommitted for Mia's review.
 
+## 14. Generator-independent AI-image disclosure rule — July 23, 2026
+
+- Mia questioned whether OpenAI image generation provides visible proof comparable to Gemini's lower-right platform mark.
+- Verified the difference between visible disclosure and technical provenance signals such as C2PA Content Credentials and SynthID.
+- Identified the post-processing risk: exact-size cropping, resizing, or conversion may remove metadata or reduce detectable provenance.
+- Mia decided that the project will not depend on Gemini's mark, an OpenAI provenance signal, or any generator-specific identifier as its only disclosure.
+- Added the required visible text `AI-generated artwork — Directed by Mia` to every final AI-created asset.
+- Preserved C2PA and SynthID as additional signals to verify on the final file, not assumptions to claim from the original generation.
+- Added preservation of original generated exports, final-file provenance checks, honest reporting, and visual approval to the asset workflow.
+- Updated the earlier “no readable text” rule with one narrow exception for the required disclosure.
+- Changed the asset status so exact dimensions, disclosure placement, provenance reporting, display testing, and final integration all remain pending.
+
 ## Next Build Actions
 
 1. Review and commit the synchronized Part 9 documentation update.
-2. Generate or resize the 12 images to exactly 1024 x 1280 pixels and verify every output.
+2. Generate or resize the 12 images to exactly 1024 x 1280 pixels, apply the visible AI disclosure, preserve the originals, and verify every final output.
 3. Build the functional diary flow: create, save, list, open, and revisit an entry.
 4. Test the core behavior before adding styling, personalization, imagery, or animation.
 5. Record real implementation prompts, debugging, code explanations, decisions, and verification as they occur.

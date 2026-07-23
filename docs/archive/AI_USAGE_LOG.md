@@ -140,3 +140,13 @@ Mia's multi-tool orchestration currently works through deliberate assignment and
 - Mia decides which tool receives each responsibility, transfers the necessary context between separate platforms, compares results, challenges errors, and makes the final project decision.
 
 These tools are not assumed to communicate with one another automatically. Mia is the coordinating layer across them.
+
+### AI-image disclosure and provenance decision
+
+- Date: July 23, 2026.
+- Question raised by Mia: Determine whether OpenAI-generated artwork includes visible proof comparable to Gemini's lower-right mark and how disclosure should survive exact-size post-processing.
+- Verified distinction: OpenAI-generated images may include C2PA Content Credentials and SynthID provenance signals, but those signals are not necessarily visible, and image processing can affect their availability.
+- Human direction: Do not rely on a generator-specific mark or invisible signal alone. Every final AI-created project image must visibly state `AI-generated artwork — Directed by Mia`.
+- Orchestration evidence: Mia identified the disclosure risk, asked the AI to distinguish visible and technical provenance, evaluated the answer, and established the final project rule.
+- Verification rule: Preserve original generated exports, inspect the final 1024 x 1280 files for supported provenance signals, record the actual result, and obtain Mia's visual approval before integration.
+- Limitation: A visible label provides disclosure but is not cryptographic proof. A missing technical signal after processing does not prove that an image was not AI-generated.

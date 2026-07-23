@@ -75,6 +75,7 @@ See [Project Plan](./docs/archive/PROJECT_PLAN.md).
 - Glassmorphism interface styling
 - Handwritten diary typography
 - Decorative polaroid-style images
+- Visible `AI-generated artwork — Directed by Mia` disclosure on every final AI-created image
 - Mobile swipe navigation that does not interfere with scrolling
 
 ## Technologies
@@ -99,7 +100,9 @@ ChatGPT/Codex is the lead planning, implementation, documentation, and verificat
 
 ### Gemini
 
-Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mia accepted Gemini's lower-right mark as AI-generation disclosure. Exact sizing remains pending.
+Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mia accepted Gemini's lower-right mark as AI-generation disclosure, but the final project will not rely on a generator-specific mark alone.
+
+Every final AI-created image will visibly state `AI-generated artwork — Directed by Mia`. C2PA Content Credentials and SynthID will be preserved and verified when available, but cropping or resizing may affect provenance signals. The final file—not only the original generation—must be checked before the project claims that technical provenance remains present.
 
 Mia is the project orchestrator. She assigns responsibilities across ChatGPT, Codex, Gemini, and Claude; transfers relevant context between their separate platforms; challenges recommendations; verifies important claims; and makes the final decisions about what enters the project. The AI tools support the work but do not direct the project or communicate with one another automatically.
 
@@ -185,7 +188,7 @@ These records show how the project was planned, developed, questioned, revised, 
 
 ## Development Status
 
-The project is in the documentation and MVP-foundation stage. The second image collection is visually accepted and sequential filenames were corrected. Exact 1024 x 1280 sizing remains pending. Documentation will be updated as prompts, decisions, tests, and verified functionality change.
+The project is in the documentation and MVP-foundation stage. The second image collection is visually accepted and sequential filenames were corrected. Exact 1024 x 1280 sizing, visible-disclosure approval, final-file provenance verification, and asset integration remain pending. Documentation will be updated as prompts, decisions, tests, and verified functionality change.
 
 ## Author
 
