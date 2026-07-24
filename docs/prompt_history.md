@@ -349,6 +349,52 @@ This map will grow from real project work. Categories marked pending are not rep
 
 **Files affected:** `AGENTS.md`, `README.md`, `docs/prompt_history.md`, `docs/BUILD_LOG.md`, `docs/archive/AI_AGENT_PROMPT_LIBRARY.md`, `docs/archive/AI_USAGE_LOG.md`, `docs/archive/ASSET_GENERATION_BRIEF.md`, `docs/archive/PROJECT_PLAN.md`, `docs/archive/PROJECT_REQUIREMENTS_AND_SCOPE.md`, and `docs/archive/SECOND_COLLECTION_AUDIT.md`.
 
+Prompt 20 — Redesign the AI workflow before implementation
+
+Date and stage: July 23, 2026 — pre-implementation workflow and resource planning
+
+AI tools and models: Gemini Pro, ChatGPT Instant 5.5, Claude Code, Codex, and Gemini 2.5 Flash
+
+Task type: Planning, constraint analysis, multi-tool orchestration, continuity preservation, and documentation review
+
+Context and initiating concern: Before beginning application implementation, Mia recognized that the repository-capable ChatGPT/Codex environment was nearing its available usage limit. Approximately 6% of that environment's usage remained after the planning, requirements, architecture, asset, and documentation work. Rather than begin implementation with a high risk of losing repository access partway through the build, Mia paused and reconsidered how responsibilities should be distributed across her available AI tools.
+
+Mia's orchestration decision: Mia preserved the detailed project handoff and reassigned repository-aware implementation to Claude Code inside Visual Studio Code. She assigned Gemini Pro as the continuing collaborator for requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits. She retained ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+
+The revised responsibility split is:
+
+Mia: Project orchestrator, context owner, reviewer, and final decision-maker.
+
+Gemini Pro: Requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits.
+
+ChatGPT Instant 5.5: Interview rubber-ducking and brainstorming with Mia.
+
+Claude Code: Repository-aware implementation, code inspection, local testing, debugging, and implementation evidence inside Visual Studio Code.
+
+Gemini 2.5 Flash: Visual-asset generation when required, followed by independent inspection and verification.
+
+Codex: Repository inspection or implementation only when Mia intentionally selects it and sufficient usage is available; it is no longer treated as the only implementation path.
+
+Why this was a constraint-driven pivot: The change was not based on abandoning the existing plan or accepting a lower-quality workflow. Mia identified a resource constraint before it became a project failure, preserved the completed reasoning and documentation, and redesigned the workflow so that one tool's usage limit would not become a single point of failure.
+
+Human-controlled context transfer: Gemini Pro, ChatGPT Instant 5.5, Claude Code, Codex, and Gemini 2.5 Flash are separate tools and are not represented as automatically sharing project knowledge. Mia determines what context each tool receives, preserves approved decisions in project documentation and handoffs, compares outputs, questions inconsistencies, and decides what enters the repository.
+
+Response summary and outcome: ChatGPT Instant 5.5 helped Mia brainstorm and develop the framing of the decision as a Constraint-Driven AI Orchestration Pivot, an AI Workflow Pivot Before Implementation, and a Multi-Tool AI Orchestration Decision. Mia then rejected simply pasting those narratives into several files without reviewing their existing structures. She required a full documentation-structure review so the pivot could be recorded differently in each affected file without unnecessary duplication or structural inconsistency.
+
+Human decision: Mia approved the multi-tool workflow and required the pivot to be documented through structure-matched updates to the existing project records. She explicitly chose not to rewrite the existing documentation, not to add artificial edits to unrelated files, and not to update DOCUMENTATION_WORKFLOW.md because the standing documentation process itself did not change.
+
+What this demonstrates: This decision shows planning, risk identification, resource management, tool selection, continuity preservation, independent judgment, and human-led AI orchestration before implementation began.
+
+Verification boundary: At the time of this entry, the orchestration plan and responsibility assignments are documented decisions. Claude Code implementation results have not yet been reviewed through this project record. Future claims about code changes, tests, debugging, or repository state must be supported by actual repository evidence supplied by Mia or verified through a connected repository-capable tool.
+
+Files affected: AGENTS.md, README.md, docs/prompt_history.md, docs/BUILD_LOG.md, and docs/archive/AI_USAGE_LOG.md.
+
+Files intentionally not affected: docs/archive/DOCUMENTATION_WORKFLOW.md, requirements, privacy, project-planning, interview, asset, audit, evidence, filename-map, and image-prompt documents. The pivot does not change their current subject matter or approved project requirements.
+
+Related commit: None recorded. Mia will review and place the documentation updates before deciding when to commit them.
+
+Next action: Supply the approved project handoff to Claude Code, begin the write-save-revisit implementation, preserve real implementation prompts and debugging evidence, use Gemini Pro for requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits, and continue using ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+
 ## Ongoing Recording Standard
 
 For every material interaction, add:

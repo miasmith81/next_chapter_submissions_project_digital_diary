@@ -54,6 +54,7 @@ See [Project Plan](./docs/archive/PROJECT_PLAN.md).
 - Independent audits of both Gemini collections
 - Verified sequential filename correction by Codex
 - Documented acceptance of Gemini's visible AI-generation watermark
+- Constraint-driven multi-tool AI orchestration plan established before implementation
 
 ## MVP Features Being Built
 
@@ -94,17 +95,31 @@ See [Project Plan](./docs/archive/PROJECT_PLAN.md).
 
 Claude supported the original diary and produced a handoff describing its design, animation, architecture, known bugs, and reusable decisions.
 
-### ChatGPT and Codex
+### ChatGPT/Codex
 
-ChatGPT/Codex is the lead planning, implementation, documentation, and verification collaborator for the admissions rebuild. It compared the original architecture with the rubric, organized the work, rubber-ducked interview answers, investigated storage limitations, independently audited AI outputs, corrected deterministic filenames, and established the live documentation workflow.
+Codex previously supported repository inspection, documentation synchronization, file organization, verification, and evidence capture. It remains an optional repository-capable tool when Mia intentionally selects it and sufficient usage is available, but it is no longer treated as the project's only implementation path.
 
-### Gemini
+### Gemini Pro
 
-Gemini 1.5 Flash completed two visual iterations. The second collection follows the requested scenes and purple/lavender painterly direction. Independent inspection found that its report overstated the technical results: actual files were 928 x 1152 and used Gemini-generated names rather than the claimed 1024 x 1280 sequential files. Codex created and verified correctly named copies. Mia accepted Gemini's lower-right mark as AI-generation disclosure, but the final project will not rely on a generator-specific mark alone.
+Gemini Pro is the primary planning, review, and documentation-audit collaborator for the admissions rebuild. It supports requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits. It does not claim repository changes or implementation verification unless the relevant files and evidence are available for inspection.
+
+### ChatGPT Instant 5.5
+
+ChatGPT Instant 5.5 supports interview rubber-ducking and brainstorming with Mia. It provides a conversational environment where Mia can think through her decisions, rehearse interview explanations, explore ideas, question assumptions, and refine her own reasoning.
+
+### Claude Code
+
+Claude Code is the primary repository-aware implementation tool for the next build stage inside Visual Studio Code. It will receive the preserved project handoff and approved documentation, inspect the actual repository, implement the static HTML, CSS, and JavaScript plan, run local checks, debug the application, and report repository-grounded evidence.
+
+### Gemini 2.5 Flash
+
+Gemini 2.5 Flash supports visual-asset generation and visual iteration. Its outputs are not accepted solely because they were generated successfully. Dimensions, visible content, filenames, provenance, disclosures, and other technical or reviewer-facing claims must be independently inspected and documented.
 
 Every final AI-created image will visibly state `AI-generated artwork — Directed by Mia`. C2PA Content Credentials and SynthID will be preserved and verified when available, but cropping or resizing may affect provenance signals. The final file—not only the original generation—must be checked before the project claims that technical provenance remains present.
 
-Mia is the project orchestrator. She assigns responsibilities across ChatGPT, Codex, Gemini, and Claude; transfers relevant context between their separate platforms; challenges recommendations; verifies important claims; and makes the final decisions about what enters the project. The AI tools support the work but do not direct the project or communicate with one another automatically.
+Mia is the project orchestrator and final decision-maker. Before implementation began, she identified that the repository-capable ChatGPT/Codex environment was nearing its available usage limit and redesigned the workflow before that constraint could interrupt the build. She preserved the completed handoff, assigned repository-aware implementation to Claude Code inside Visual Studio Code, assigned Gemini Pro to requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits, and retained ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+
+Mia assigns responsibilities across Gemini Pro, ChatGPT Instant 5.5, Claude Code, Codex, and Gemini 2.5 Flash; transfers relevant context between their separate platforms; challenges recommendations; verifies important claims; and decides what enters the project. The AI tools do not direct the project or communicate with one another automatically. This human-controlled responsibility split prevents one tool from becoming a single point of failure while preserving continuity across planning, brainstorming, interview preparation, implementation, verification, image generation, and documentation.
 
 ## Running Locally
 
@@ -188,7 +203,7 @@ These records show how the project was planned, developed, questioned, revised, 
 
 ## Development Status
 
-The project is in the documentation and MVP-foundation stage. The second image collection is visually accepted and sequential filenames were corrected. Exact 1024 x 1280 sizing, visible-disclosure approval, final-file provenance verification, and asset integration remain pending. Documentation will be updated as prompts, decisions, tests, and verified functionality change.
+The project is in the documentation and MVP-foundation stage. The AI workflow has been intentionally divided before implementation: Claude Code will perform repository-aware implementation inside Visual Studio Code; Gemini Pro will support requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits; ChatGPT Instant 5.5 will support interview rubber-ducking and brainstorming with Mia; and Gemini 2.5 Flash will support visual-asset generation and visual iteration. The second image collection is visually accepted and sequential filenames were corrected. Exact 1024 x 1280 sizing, visible-disclosure approval, final-file provenance verification, asset integration, and the write-save-revisit implementation remain pending. Documentation will be updated as prompts, decisions, tests, debugging, and verified functionality change.
 
 ## Author
 

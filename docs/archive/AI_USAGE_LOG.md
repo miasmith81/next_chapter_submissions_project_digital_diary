@@ -6,10 +6,12 @@ This log records how AI tools supported the project, what each tool was asked to
 
 | AI tool or agent | Best use in this project | Why it fits | Current status |
 |---|---|---|---|
-| ChatGPT | Lead planning, requirements interpretation, interview rubber-ducking, prompt refinement, and explaining tradeoffs | Strong conversational partner for turning Mia's ideas into a clear plan while preserving her voice | Keep |
-| Codex | Repository inspection, implementation, testing, documentation maintenance, file organization, and evidence capture | Works directly with project files and can verify changes against the actual codebase | Keep |
+| Gemini Pro | Lead requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits | Provides a continuing reasoning and review environment where Mia can examine requirements, challenge recommendations, preserve approved decisions, and evaluate documentation without depending on direct repository access | Keep |
+| ChatGPT Instant 5.5 | Interview rubber-ducking and brainstorming with Mia | Provides a conversational environment where Mia can think aloud, rehearse interview explanations, explore ideas, question assumptions, and refine her own reasoning |Keep |
+| Codex | Optional repository inspection, implementation, testing, documentation synchronization, and evidence capture when intentionally selected | Has supported repository-level audits and verified documentation work, but available usage should be preserved and it must not remain a single point of failure | Keep as an optional repository-capable tool rather than the only implementation path |
+| Claude Code | Repository-aware implementation, code inspection, local testing, debugging, and implementation evidence inside Visual Studio Code | Can work directly with the repository during the build while following the preserved requirements, architecture decisions, handoff, and project documentation | Keep as the primary implementation tool for the next build stage |
 | Claude | Independent architecture and code review | Provides a separate review perspective and can challenge assumptions after an implementation milestone | Keep when independent review adds value; do not use for routine duplicate work |
-| Gemini Flash | Generating visual placeholder assets from a detailed creative brief | Appropriate for fast image iterations; outputs still require independent inspection and technical verification | Keep for image generation |
+| Gemini 2.5 Flash | Visual-asset generation and visual iteration when required | Supports rapid visual generation, but generated outputs still require independent dimension, content, provenance, and visible-disclosure verification | Use for image generation only, followed by independent inspection and verification |
 
 ## Model and Token Strategy
 
@@ -18,6 +20,15 @@ This log records how AI tools supported the project, what each tool was asked to
 - Use Codex when the task requires direct knowledge of repository files, implementation, testing, or synchronized documentation.
 - Do not ask multiple agents to perform the same task unless a deliberate independent review is needed.
 - Record the exact model shown in the tool interface whenever possible. Do not guess model names after the fact.
+- Treat tool availability and remaining usage as engineering constraints that should be considered before starting a long implementation stage.
+- Do not make one AI environment the project's only implementation path when another repository-aware tool can continue the approved plan.
+- Preserve requirements, decisions, constraints, and verification expectations in a structured handoff before transferring implementation responsibility.
+- Assign tools by responsibility rather than assuming the most capable or most familiar tool should perform every task.
+- Use Gemini Pro for requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits.
+- Use ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+- Use Gemini 2.5 Flash specifically for visual-asset generation and visual iteration.
+- Keep planning, implementation, verification, brainstorming, interview preparation, image generation, and final approval as distinguishable responsibilities, even when one tool can technically perform more than one of them.
+- When a tool or model name is not independently confirmed, record the uncertainty rather than guessing.
 
 ## Interaction Log
 
@@ -125,6 +136,27 @@ This log records how AI tools supported the project, what each tool was asked to
 - Verification required: No excluded nickname or alternate surname remains in project Markdown; all existing documentation, link, formatting, and scope checks must continue to pass.
 - Commit: None; the update remains reserved for Mia's review.
 
+### Multi-tool AI orchestration — Constraint-driven pivot before implementation
+
+- Date: July 23, 2026.
+- Project stage: Documentation and MVP foundation complete; application implementation not yet started.
+- Constraint identified by Mia: The repository-capable ChatGPT/Codex environment was nearing its available usage limit, with approximately 6% remaining after the planning and documentation work.
+- Risk identified: Beginning the full implementation in that environment could create a single point of failure if repository access became unavailable during the build.
+- Mia's decision: Preserve the completed handoff, assign repository-aware implementation inside Visual Studio Code to Claude Code, use Gemini Pro for planning and review responsibilities, and retain ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+- Gemini Pro's assigned responsibility: Requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits.
+- ChatGPT Instant 5.5's assigned responsibility: Interview rubber-ducking and brainstorming with Mia.
+- Claude Code's assigned responsibility: Inspect the actual repository, implement the approved static HTML/CSS/JavaScript plan, run local checks, debug code, and produce repository-grounded implementation evidence.
+- Codex's revised responsibility: Remain available for intentional repository audits or implementation tasks when Mia selects it and sufficient usage is available; do not treat it as the only implementation path.
+- Gemini 2.5 Flash's assigned responsibility: Produce visual assets and visual iterations when required; all outputs remain subject to independent visual and technical verification.
+- Why the tools were selected: The division assigns each tool a distinct responsibility while moving direct repository work to Claude Code inside Mia's Visual Studio Code environment. Gemini Pro supports structured reasoning, review, verification planning, and documentation auditing. ChatGPT Instant 5.5 supports conversational interview practice and brainstorming. Gemini 2.5 Flash supports image generation.
+- Continuity method: Mia carries the approved handoff, requirements, decisions, constraints, and relevant documentation between the separate tools. The tools are not represented as automatically sharing context.
+- Human oversight: Mia identified the constraint, rejected continuing until failure, chose the new responsibility split, required a structure-aware documentation review, and retained final authority over implementation and documentation.
+- Documentation decision: Record the same event differently according to each file's purpose rather than copying one narrative into every document.
+- Scope boundary: The pivot changes AI responsibility allocation. It does not change the approved MVP, static architecture, privacy limitations, visual requirements, documentation workflow, or build order.
+- Verification boundary: No Claude Code implementation claim is treated as verified until the actual repository changes and test results are reviewed. No Gemini 2.5 Flash image claim is treated as verified until the actual output is independently inspected.
+- Models: Gemini Pro, ChatGPT Instant 5.5, Claude Code, Codex, and Gemini 2.5 Flash.
+- Commit: None recorded; the documentation additions remain subject to Mia's review.
+
 ## Human Oversight
 
 Mia is the project orchestrator and final decision-maker. AI tools may suggest, draft, generate, review, or implement, but Mia determines the project direction, accepts or rejects recommendations, and is responsible for explaining the result. AI-generated claims are independently checked whenever the actual files or code are available.
@@ -140,6 +172,8 @@ Mia's multi-tool orchestration currently works through deliberate assignment and
 - Mia decides which tool receives each responsibility, transfers the necessary context between separate platforms, compares results, challenges errors, and makes the final project decision.
 
 These tools are not assumed to communicate with one another automatically. Mia is the coordinating layer across them.
+
+The pre-implementation workflow pivot provides an additional example of this oversight. Mia recognized that one repository-capable environment was nearing its available usage limit, paused before implementation, preserved the completed handoff, and reassigned repository work to Claude Code rather than allowing a tool constraint to interrupt the build. Gemini Pro was assigned requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits. ChatGPT Instant 5.5 was retained for interview rubber-ducking and brainstorming with Mia. Gemini 2.5 Flash remained responsible for visual-asset generation, subject to independent verification. This division was selected by Mia and can be revised by Mia as project evidence and tool availability change.
 
 ### AI-image disclosure and provenance decision
 

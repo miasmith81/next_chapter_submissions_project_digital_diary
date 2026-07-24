@@ -128,6 +128,36 @@ This chronological log records significant project decisions, changes, verificat
 - Updated the earlier “no readable text” rule with one narrow exception for the required disclosure.
 - Changed the asset status so exact dimensions, disclosure placement, provenance reporting, display testing, and final integration all remain pending.
 
+15. Constraint-driven AI orchestration pivot before implementation — July 23, 2026
+
+Mia identified that the repository-capable ChatGPT/Codex environment was nearing its available usage limit before application implementation began.
+
+Paused before starting code work rather than risk losing the primary implementation environment during the build.
+
+Preserved the completed requirements analysis, architecture decisions, documentation, asset evidence, and detailed project handoff.
+
+Reassigned repository-aware implementation inside Visual Studio Code to Claude Code.
+
+Assigned Gemini Pro to requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits.
+
+Retained ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
+
+Kept Gemini 2.5 Flash assigned to visual generation when needed, with independent inspection required before accepting technical or visual claims.
+
+Clarified that Codex remains an optional repository-capable tool when Mia intentionally selects it and sufficient usage is available; it is not the project's only implementation path.
+
+Confirmed that Mia remains the context-transfer layer, project orchestrator, reviewer, and final decision-maker across all tools.
+
+Treated the change as a continuity and risk-management decision rather than a product-scope, architecture, privacy, feature, or documentation-workflow change.
+
+Reviewed the existing documentation structures before drafting updates so the pivot would be represented according to each file's purpose instead of copied into multiple documents verbatim.
+
+Limited the documentation update to AGENTS.md, README.md, docs/prompt_history.md, docs/BUILD_LOG.md, and docs/archive/AI_USAGE_LOG.md.
+
+No application code, feature requirement, visual asset, privacy boundary, or approved implementation scope changed during this decision.
+
+Claude Code implementation and testing evidence remain pending and must be documented from actual repository work.
+
 ## Next Build Actions
 
 1. Review and commit the synchronized Part 9 documentation update.
