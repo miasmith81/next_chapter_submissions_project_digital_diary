@@ -341,7 +341,7 @@ This map will grow from real project work. Categories marked pending are not rep
 
 > Chat I love this!!! We are really learning how to work together and building a strong foundation. I love the idea that we do not take Gemini's identification that the image was AI generated but that we disclose that the images that we create will always state that these images were AI generated and orchestrated by me and since we possibly could be cropping original AI generated images and possibly lose the C2PA and SynthID verification lets always state that these images were AI generated directed by me to protect me.
 
-**Human decision:** Mia established a generator-independent final-asset rule. Every final AI-created image must visibly state `AI-generated artwork — Directed by Mia`. A Gemini mark, C2PA metadata, or SynthID signal can provide additional provenance, but none replaces the required visible disclosure.
+**Human decision:** Mia established a generator-independent final-asset rule. Every final AI-generated image must visibly state `AI-generated image — Directed by Mia`. A Gemini mark, C2PA metadata, or SynthID signal can provide additional provenance, but none replaces the required visible disclosure.
 
 **Implementation boundary:** The project will preserve original generated files, apply exact dimensions and the visible disclosure to final project-ready files, verify supported provenance signals on the final exports, and report the result honestly. A missing signal after processing will not be misrepresented as proof that an image was not AI-generated.
 

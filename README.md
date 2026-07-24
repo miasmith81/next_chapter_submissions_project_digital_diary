@@ -76,7 +76,7 @@ See [Project Plan](./docs/archive/PROJECT_PLAN.md).
 - Glassmorphism interface styling
 - Handwritten diary typography
 - Decorative polaroid-style images
-- Visible `AI-generated artwork — Directed by Mia` disclosure on every final AI-created image
+- Visible `AI-generated image — Directed by Mia` disclosure on every final AI-created image
 - Mobile swipe navigation that does not interfere with scrolling
 
 ## Technologies
@@ -115,7 +115,7 @@ Claude Code is the primary repository-aware implementation tool for the next bui
 
 Gemini 2.5 Flash supports visual-asset generation and visual iteration. Its outputs are not accepted solely because they were generated successfully. Dimensions, visible content, filenames, provenance, disclosures, and other technical or reviewer-facing claims must be independently inspected and documented.
 
-Every final AI-created image will visibly state `AI-generated artwork — Directed by Mia`. C2PA Content Credentials and SynthID will be preserved and verified when available, but cropping or resizing may affect provenance signals. The final file—not only the original generation—must be checked before the project claims that technical provenance remains present.
+Every final AI-generated image will visibly state `AI-generated image — Directed by Mia`. C2PA Content Credentials and SynthID will be preserved and verified when available, but cropping or resizing may affect provenance signals. The final file—not only the original generation—must be checked before the project claims that technical provenance remains present.
 
 Mia is the project orchestrator and final decision-maker. Before implementation began, she identified that the repository-capable ChatGPT/Codex environment was nearing its available usage limit and redesigned the workflow before that constraint could interrupt the build. She preserved the completed handoff, assigned repository-aware implementation to Claude Code inside Visual Studio Code, assigned Gemini Pro to requirements interpretation, architecture review, Teaching Mode, verification planning, explanation of tradeoffs, reflective follow-up, and reviewer-facing documentation audits, and retained ChatGPT Instant 5.5 for interview rubber-ducking and brainstorming with Mia.
 
